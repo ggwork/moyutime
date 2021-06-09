@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="m-step">
-      <el-steps direction="vertical" :active="activeStep">
+      <el-steps direction="vertical">
         <el-step
           v-for="(step, index) in stepItems"
           :key="index"
@@ -39,7 +39,6 @@
         ></el-step>
       </el-steps>
     </div>
-    
   </div>
 </template>
 <script>
@@ -74,7 +73,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content: this.toolsData.map(item=>{return '免费'+item.title+'推荐'}).join(',')
+          content: this.toolsData.map(item=>{return '免费'+item.title}).join(',')
         }
       ]
     }
