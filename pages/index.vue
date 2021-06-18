@@ -77,7 +77,6 @@ export default {
 .container {
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
   
   .c-c-des{
     font-weight: bold;

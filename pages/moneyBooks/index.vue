@@ -18,9 +18,9 @@
 import bookData from '@/assets/moneyBooks/bookData.js'
 export default {
   data(){
-    books:[{
-      
-    }]
+    return {
+      bookData
+    }
   }
 }
 </script>
