@@ -1,18 +1,20 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '墨鱼时间',
+    title: '墨鱼推荐',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' },
-      { hid: 'description', name: 'description', content: '墨鱼既摸鱼，在线工具推荐，在线工具开发，在线电子书下载，在线api文档阅读，在线牢骚吐槽' }
+      { hid: 'description', name: 'description', content: '推荐最好用的工具，推荐最有用的书籍。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://lib.baomitu.com/normalize/4.2.0/normalize.css' },
       { rel: 'stylesheet', type: 'text/css', href: '/global.css' }
+      
     ],
     script: [
       // 友盟

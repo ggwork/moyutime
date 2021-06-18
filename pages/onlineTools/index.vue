@@ -1,15 +1,13 @@
 <template>
   <div class="online">
     <data-template :toolsData="onlineData"></data-template>
-    <comFooter></comFooter>
   </div>
 </template>
 <script>
-import comFooter from '@/components/footer'
-import dataTemplate from '@/components/officetools/data-template'
-import onlineData from '@/assets/officetools/onlineData'
+import dataTemplate from '@/components/onlineTools/data-template'
+import onlineData from '@/assets/onlineTools/onlineData'
 export default {
-  name: 'officetools',
+  name: 'onlineTools',
   data() {
     return {
       onlineData: onlineData
@@ -17,7 +15,12 @@ export default {
   },
   components: {
     dataTemplate,
-    comFooter
   }
 }
 </script>
+<style lang="scss" scoped>
+.online{
+  width: 1200px;
+  margin:auto;
+}
+</style>

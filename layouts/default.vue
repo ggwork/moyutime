@@ -1,11 +1,27 @@
 
-
 <template>
   <div class="b-main">
+    <comHeader></comHeader>
     <Nuxt />
+    <comFooter></comFooter>
   </div>
 </template>
+<script>
+import comHeader from '@/components/header'
+import comFooter from '@/components/footer'
+export default {
+  name:'default',
+  data(){
+    return {
 
+    }
+  },
+  components:{
+    comHeader,
+    comFooter
+  }
+}
+</script>
 <style>
 html {
   font-family:
@@ -33,7 +49,6 @@ html {
   margin: 0;
 }
 .b-main{
-  width: 1200px;
   margin:auto;
 }
 </style>
