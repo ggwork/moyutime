@@ -10,7 +10,25 @@ export default {
   name: 'onlineTools',
   data() {
     return {
-      onlineData: onlineData
+      onlineData: onlineData,
+      headDescription: onlineData.map(item => {
+        return '最好用的，免费的' + item.title + '推荐'
+      }).join(',')
+    }
+  },
+  created() {
+    console.log('headDescription:',this.headDescription)
+  },
+  head(){
+    return {
+      title:'在线办公工具推荐',
+      meta:[
+        {
+          hid:'description',
+          name:'description',
+          conent:this.headDescription
+        }
+      ]
     }
   },
   components: {
