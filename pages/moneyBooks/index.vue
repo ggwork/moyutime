@@ -25,33 +25,7 @@ import _ from 'loadsh';
 export default {
   data(){
     return {
-      bookData:[
-        {
-          cover:"/index/moyu.png",
-          name:'測試測試',
-          author:'啊啊啊啊'
-        },
-        {
-          cover:"/index/moyu.png",
-          name:'測試測試',
-          author:'啊啊啊啊'
-        },
-        {
-          cover:"/index/moyu.png",
-          name:'測試測試',
-          author:'啊啊啊啊'
-        },
-        {
-          cover:"/index/moyu.png",
-          name:'測試測試',
-          author:'啊啊啊啊'
-        },
-        {
-          cover:"/index/moyu.png",
-          name:'測試測試',
-          author:'啊啊啊啊'
-        }
-      ]
+      bookData:bookData
     }
   },
   computed:{
