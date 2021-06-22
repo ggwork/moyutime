@@ -7,8 +7,8 @@
   </div>
 </template>
 <script>
-import comHeader from '@/components/header'
-import comFooter from '@/components/footer'
+import comHeader from '@/components/cHeader'
+import comFooter from '@/components/cFooter'
 export default {
   name:'default',
   data(){

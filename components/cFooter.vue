@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="cfooter">
       <div class="f-t">京ICP备2021006843号</div>
       <div class="f-t">我向星星许了个愿。我并不是真的相信它，但是反正也是免费的，而且也没有证据证明它不灵。</div>
       <div class="f-t">
@@ -9,12 +9,12 @@
 </template>
 <script>
 export default {
-  name:'footer'
+  name:'cFooter'
 }
 </script>
 
 <style lang="scss" scoped>
-.footer {
+.cfooter {
   width: 100%;
   line-height: 20px;
   border-top:1px dotted #888ea2;

@@ -1,17 +1,19 @@
 <template>
   <div class="main">
     <h1 class="m-title">史上最全的理财书籍库</h1>
-    <p class="m-des">共收录理财书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了理财所有的经典书籍</p>
+    <p class="m-des">共收录理财书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了理财类所有的经典书籍</p>
     <div class="cont">
-      <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" justify="space-between">
+      <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" >
         <el-col :span="6" v-for="(book,index) in bookArr" :key="index" class="book">
-          <div class="cover"><img :src="book.cover" :alt="book.name" srcset=""></div>
-          <div class="b-des">
-            <h3 class="name">
-              {{book.name}}
-            </h3>
-            <div class="author">
-              {{book.author}}
+          <div @click="goDownload(aIndex,index)">
+            <div class="cover"><img :src="book.cover" :alt="book.name" srcset=""></div>
+            <div class="b-des">
+              <h3 class="name">
+                {{book.name}} 
+              </h3>
+              <div class="author">
+                {{book.author}}
+              </div>
             </div>
           </div>
         </el-col>
@@ -25,12 +27,40 @@ import _ from 'loadsh';
 export default {
   data(){
     return {
-      bookData:bookData
+      bookData:bookData,
+      description:''
     }
+  },
+  created(){
+    this.description = this.bookData.map(item=>{
+      return item.name
+    }).join(',')
   },
   computed:{
     splitedTo4BookData(){
       return _.chunk(this.bookData,4)
+    }
+  },
+  head(){
+    return {
+      title:'经典理财书籍在线分享',
+      meta:[
+        {
+          name: 'description',
+          content: this.description
+        },
+        {
+          name:'keywords',
+          content:this.description
+        }
+      ]
+    }
+  },
+  methods:{
+    goDownload(aIndex,index){
+      console.log('goDownload')
+      let bIndex = aIndex * 4 + index
+      this.$router.push('/common/downloadBook?bIndex='+bIndex)
     }
   }
 }
@@ -56,12 +86,21 @@ export default {
     }
   }
   .cont{
+    .el-row{
+      
+    }
     .book{
       width: 270px;
       height: 264px;
       margin-top:50px;
       flex-grow: 0;
       flex-shrink: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0px;
+      }
       .cover{
         height: 156px;
         padding:8px 0px;
