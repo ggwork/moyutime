@@ -58,9 +58,9 @@ export default {
   },
   methods:{
     goDownload(aIndex,index){
-      console.log('goDownload')
       let bIndex = aIndex * 4 + index
       this.$router.push('/common/downloadBook?bIndex='+bIndex)
+      window.uMengTj && window.uMengTj('理财书籍','点击',this.bookData[bIndex].name)
     }
   }
 }

@@ -9,3 +9,4 @@ window._czc.push(['_setAccount', '1279994399'])
 function uMengTj(category,action,label) {
   window._czc.push(['_trackEvent',category,action,label])
 }
+window.uMengTj = uMengTj

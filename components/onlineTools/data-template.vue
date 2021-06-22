@@ -15,7 +15,7 @@
           :key="cIndex"
           :title="cItem.describe"
         >
-          <a target="_blank" :href="cItem.address" class="m-wrap">
+          <a target="_blank" :href="cItem.address" class="m-wrap" @click="goOutWebsite(cItem)">
             <img :src="cItem.src" class="img-url" />
             <span class="item-content">
               <h3>{{ cItem.title }}</h3>
@@ -123,6 +123,9 @@ export default {
     stepClick(step, index) {
       document.documentElement.scrollTop = (index + 1) * this.itemHeight;
     },
+    goOutWebsite(cItem){
+      window.uMengTj && window.uMengTj('在线办公工具','跳转',cItem.title)
+    }
   },
   destroyed() {
     window.removeEventListener('scroll', this.winScrollFn);

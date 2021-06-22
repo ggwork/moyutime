@@ -87,6 +87,7 @@ export default {
       this.curBook = curBook
     },
     downloadFn(){
+      window.uMengTj && window.uMengTj('书籍','下载',this.curBook.name)
       this.hasClickDownLoad = true
     },
     formatContent(val){
