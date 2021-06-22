@@ -121,6 +121,8 @@ export default {
         width: 100%;
         .nav-link{
           text-decoration: none;
+          width: 240px;
+          display: inline-block;
           .nav-item{
             width: 240px;
             background: white;

@@ -98,6 +98,7 @@ export default {
       border-radius: 8px;
       overflow: hidden;
       margin-right: 40px;
+      cursor: pointer;
       &:last-child{
         margin-right: 0px;
       }
