@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <h1 class="m-title">史上最全的理财书籍库</h1>
-    <p class="m-des">共收录理财书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了理财类所有的经典书籍</p>
+    <h1 class="m-title">史上最全的前端书籍库</h1>
+    <p class="m-des">共收录理财书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了前端所有的经典书籍</p>
     <div class="cont">
       <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" >
         <el-col :span="6" v-for="(book,index) in bookArr" :key="index" class="book">
@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-import bookData from '@/assets/moneyBooks/bookData.js'
+import bookData from '@/assets/feBooks/bookData.js'
 import _ from 'loadsh';
 export default {
   data(){
@@ -43,7 +43,7 @@ export default {
   },
   head(){
     return {
-      title:'经典理财书籍在线分享',
+      title:'经典前端书籍在线分享',
       meta:[
         {
           name: 'description',
@@ -59,8 +59,8 @@ export default {
   methods:{
     goDownload(aIndex,index){
       let bIndex = aIndex * 4 + index
-      this.$router.push('/common/downloadBook?type=moneyBook&bIndex='+bIndex)
-      window.uMengTj && window.uMengTj('理财书籍','点击',this.bookData[bIndex].name)
+      this.$router.push('/common/downloadBook?bIndex='+bIndex)
+      window.uMengTj && window.uMengTj('前端书籍','点击',this.bookData[bIndex].name)
     }
   }
 }

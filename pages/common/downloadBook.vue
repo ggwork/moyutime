@@ -38,12 +38,13 @@
   </div>
 </template>
 <script>
-import bookData from '@/assets/moneyBooks/bookData.js'
+import moneyBookData from '@/assets/moneyBooks/bookData.js'
+import feBookData from '@/assets/feBooks/bookData.js'
 import _ from 'loadsh';
 export default {
   data(){
     return {
-      bookData,
+      bookData:moneyBookData,
       curBook:{},
       hasClickDownLoad:false,
       recomBookData:[]
@@ -59,8 +60,19 @@ export default {
   },
   methods:{
     init(){
+      let type = this.$route.query.type
+      switch(type){
+        case 'moneyBooks':
+          this.bookData = moneyBookData
+          break
+        case 'feBooks':
+          this.bookData = feBookData
+          break
+        default:
+          this.bookData = moneyBookData
+      }
       let bIndex = this.$route.query.bIndex
-      let curBook = bookData[bIndex]
+      let curBook = this.bookData[bIndex]
       if(!this.curBook){
         this.$alert('您查找的书籍不存在，请从书籍页重新进入！','提示',{
           confirmButtonText: '确定',
@@ -79,7 +91,7 @@ export default {
       this.recomBookData = _.sampleSize(this.bookData,7)
     },
     changeBook(index){
-      let curBook = bookData[index]
+      let curBook = this.bookData[index]
       // 对作者信息和书籍段落做格式化处理
       curBook.cover = curBook.cover.replace('-min','')
       curBook.authorDes = this.formatContent(curBook.authorDes)

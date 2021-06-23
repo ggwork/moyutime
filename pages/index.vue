@@ -51,6 +51,11 @@ export default {
               title:'理财书籍',
               url:'/moneybooks',
               icon:'/index/icon/money-bag.svg'
+            },
+            {
+              title:'前端书籍',
+              url:'/febooks',
+              icon:'/index/icon/xiniu.svg'
             }
           ]
         }
