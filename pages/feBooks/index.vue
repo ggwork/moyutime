@@ -59,7 +59,7 @@ export default {
   methods:{
     goDownload(aIndex,index){
       let bIndex = aIndex * 4 + index
-      this.$router.push('/common/downloadBook?bIndex='+bIndex)
+      this.$router.push('/common/downloadBook?type=feBooks&bIndex='+bIndex)
       window.uMengTj && window.uMengTj('前端书籍','点击',this.bookData[bIndex].name)
     }
   }

@@ -33,8 +33,22 @@
         <div class="d-code">验证码：<span >{{ curBook.downloadCode }}</span></div>
       </div>
     </div>
-    
-    
+
+    <el-dialog
+      :visible.sync="showMoneyDialog"
+      width="30%"
+      center
+      custom-class="bdDialog"
+      @close="hideMoneyDialog"
+      >
+      <div class="bd-title">整理不易，打赏下好不好 (/≧▽≦)/</div>
+      <div class="bd-money">
+        <img src="/index/money.jpg" alt="微信赞赏码"/>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="hideMoneyDialog">确 定</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 <script>
@@ -47,7 +61,8 @@ export default {
       bookData:moneyBookData,
       curBook:{},
       hasClickDownLoad:false,
-      recomBookData:[]
+      recomBookData:[],
+      showMoneyDialog:false
     }
   },
   created(){
@@ -100,7 +115,7 @@ export default {
     },
     downloadFn(){
       window.uMengTj && window.uMengTj('书籍','下载',this.curBook.name)
-      this.hasClickDownLoad = true
+      this.showMoneyDialog = true
     },
     formatContent(val){
       let valArr = val.split('|||')
@@ -108,6 +123,10 @@ export default {
         return `<p>${item}</p>`
       })
       return valArr.join('')
+    },
+    hideMoneyDialog(){
+      this.showMoneyDialog = false
+      this.hasClickDownLoad = true
     },
     goAnotherBook(book){
       // 获取book的index
@@ -239,4 +258,26 @@ export default {
 }
 </style>
 
+<style lang="scss">
+.bdDialog{
+  border-radius: 12px;
+  .bd-title{
+    font-weight:bold;
+    text-align:center;
+    font-size:18px;
+  }
+  .bd-money{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    margin-top:30px;
+    text-align:center;
+    img{
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+}
+</style>
 

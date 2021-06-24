@@ -9,7 +9,7 @@ let bookData=[
     downloadCode:'078n'
   },
   {
-    cover:'/feBooks/',
+    cover:'/feBooks/sjjgysf-min.jpg',
     name:'数据结构与算法JavaScript描述',
     author: 'Michael McMillan',
     authorDes: '作为大学老师和程序员，曾编写过多部受到好评的数据结构与算法图书，包括Data Structures and Algorithms Using C#、Data Structures and Algorithms Using Visual Basic.NET，以及其他计算机教程，如Object-Oriented Programming with Visual Basic.NET、C++ Programming: An Introduction、Java Programming Tutorial、Perl from the Ground Up等。Michael现在阿肯色州北小石城普瓦斯基技术学院当讲师，教授计算机信息系统。他还是北小石城阿肯色大学的兼职讲师，教授信息科学。',
@@ -126,7 +126,7 @@ let bookData=[
     downloadCode:'czn0'
   },
   {
-    cover:'/feBooks/',
+    cover:'/feBooks/svgjs-min.jpg',
     name:'SVG精髓（第2版）',
     author: 'J. David Eisenberg/Amelia Bellamy-Royds',
     authorDes: '一名程序员和教师。他开发了CSS、JavaScript、CGI、XML和Perl等多门编程课程，并在加州圣何塞常青谷学院教授计算机信息技术课程。他还著有Études for Erlang、Lets Read Hiragana以及本书第1版。|||Amelia Bellamy-Royds,一位专门从事科学和技术交流的自由撰稿人。她通过参与Web Platform Docs、Stack Exchange和Codepen等在线社区，帮助推动Web标准和设计。',
@@ -207,7 +207,7 @@ let bookData=[
     downloadUrl:'https://pan.baidu.com/s/1COWRNtfia2USUVJ75Fid0Q',
     downloadCode:'qcbz'
   },{
-    cover:'/feBooks/',
+    cover:'/feBooks/jsrzmj-min.jpg',
     name:'JavaScript忍者秘籍',
     author: 'John Resig / Bear Bibeault',
     authorDes: 'John Resig是可汗学院计算机科学学院的院长，也是jQuery JavaScript库的创造者。排名前10000的网站中，目前有57%的网站使用jQuery（BuiltWith.com统计），并且有几百万其他网站也使用jQuery，它已成为最受欢迎的用于构建网站的技术，可能也是一直以来最流行的编程技术之一。|||他还创建了许多其他开源工具和项目，包括Processing.js（Processing语言到JavaScript的转换）、QUnit（测试JavaScript代码的测试套件）和TestSwarm（用于分布式JavaScript测试的平台）。|||他目前正在可汗学院进一步开展计算机科学教育，他在学校开发计算机科学课程和工具，来教各个年龄层的人如何编程。可汗学院的目标是创造优秀的免费教育资源。他不仅教人们如何编程，还让每一位程序员体验写完自己的第一个程序后的兴奋。',
@@ -316,8 +316,8 @@ let bookData=[
     author: '阮一峰',
     authorDes: '阮一峰：著名技术博客作者，JavaScript专家。专注于网站开发技术，超过十年。畅销书《黑客与画家》《软件随想录》的译者。',
     des:'《ECMAScript6入门》全面介绍了ECMAScript6新引入的语法特性，覆盖了ECMAScript6与ECMAScript5的所有不同之处，对涉及的语法知识给予了详细介绍，并给出了大量简洁易懂的示例代码。|||《ECMAScript6入门》为中级难度，适合已有一定JavaScript语言基础的读者，用来了解这门语言的最新发展；也可当作参考手册，查寻新增的语法点。',
-    downloadUrl:'https://pan.baidu.com/s/1_MY2O8N-r4igjOtV-FItYA',
-    downloadCode:'ed6d'
+    downloadUrl:'https://pan.baidu.com/s/1TaHGSEnX7hymPAxA7mYOsA',
+    downloadCode:'3jgk'
   },{
     cover:'/feBooks/cssqwzn-min.jpg',
     name:'CSS权威指南（第3版）',
@@ -380,7 +380,7 @@ let bookData=[
     downloadCode:'sxe1'
   },
   {
-    cover:'/feBooks/srqcrhr-minjpg',
+    cover:'/feBooks/srqcrhr-min.jpg',
     name:'深入浅出React和Redux',
     author: '程墨',
     authorDes: '程墨　资深架构师，曾任职于摩托罗拉、雅虎和微软，云鸟配送平台联合创始人，目前服务于美国视频服务公司Hulu',
@@ -389,7 +389,7 @@ let bookData=[
     downloadCode:'0pyx'
   },
   {
-    cover:'/feBooks/',
+    cover:'/feBooks/rjjzl-min.jpg',
     name:'React进阶之路',
     author: '徐超',
     authorDes: '徐 超毕业于浙江大学，硕士，资深前端工程师，长期就职于能源物联网公司远景智能。8年软件开发经验，熟悉大前端技术，拥有丰富的Web前端和移动端开发经验，尤其对React技术栈和移动Hybrid开发技术有深入的理解和实践经验。',
@@ -398,7 +398,7 @@ let bookData=[
     downloadCode:'w41j'
   },
   {
-    cover:'/feBooks/',
+    cover:'/feBooks/srqcv-min.jpg',
     name:'深入浅出Vue.js',
     author: '刘博文',
     authorDes: '网名Berwin，95后，从事Web前端工作5年，2015年加入360奇舞团，现任360导航事业部资深前端工程师，负责360导航首页及二级页创新项目等亿级PV站点的设计与优化，推动Vue.js成为部门内广泛使用的核心技术栈，独立研发相关开发工具与技术解决方案并使之成功落地。 ',
@@ -406,7 +406,7 @@ let bookData=[
     downloadUrl:'https://pan.baidu.com/s/1IL5RvRTuzGHJQM2zLi03dg',
     downloadCode:'b3h5'
   },{
-    cover:'/feBooks/',
+    cover:'/feBooks/qdgch-min.jpg',
     name:'前端工程化：体系设计与实践',
     author: '周俊鹏',
     authorDes: '1987年生人，天蝎座，5只猫和1只狗的铲屎官，大前端（客户端+Web Service）践行者。主要研究方向为前端工程化和Web应用层架构，好于研究事物的本质，并且乐于从宏观的角度解决问题。时任搜狗地图Web前端开发主管。',
