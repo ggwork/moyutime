@@ -54,6 +54,7 @@
 <script>
 import moneyBookData from '@/assets/moneyBooks/bookData.js'
 import feBookData from '@/assets/feBooks/bookData.js'
+import coderBookData from '@/assets/coderBooks/bookData.js'
 import _ from 'loadsh';
 export default {
   data(){
@@ -71,6 +72,16 @@ export default {
   head(){
     return {
       title:this.curBook.name,
+      meta:[
+        {
+          name: 'description',
+          content: this.curBook.des
+        },  
+        {
+          name:'keywords',
+          content:'《' + this.curBook.name + '》pdf免费下载',
+        }
+      ]
     }
   },
   methods:{
@@ -82,6 +93,9 @@ export default {
           break
         case 'feBooks':
           this.bookData = feBookData
+          break
+        case 'coderBooks':
+          this.bookData = coderBookData
           break
         default:
           this.bookData = moneyBookData

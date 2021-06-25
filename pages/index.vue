@@ -56,6 +56,11 @@ export default {
               title:'前端书籍',
               url:'/febooks',
               icon:'/index/icon/xiniu.svg'
+            },
+            {
+              title:'程序员必备书籍',
+              url:'/coderBooks',
+              icon:'/index/icon/coder.svg'
             }
           ]
         }

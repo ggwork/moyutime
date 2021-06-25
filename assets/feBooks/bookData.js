@@ -414,6 +414,23 @@ let bookData=[
     downloadUrl:'https://pan.baidu.com/s/11lrXD7o2yicXWtZKopEqEg',
     downloadCode:'qpt7'
   },
+  {
+    cover:'/coderbooks/httpqwzn-min.jpg',
+    name:'HTTP权威指南',
+    author: 'David Gourley / Brian Totty',
+    authorDes: 'David Gourley是Endeca的首席技术官（Chief Technology Officer），负责Endeca产品的研究及开发。Endeca开发的因特网及内部网络信息访问解决方案为企业级数据的导航及研究提供了一些新的方式。在到Endeca工作之前，David是Inktomi基础工程组的一员，他在那儿帮助开发了Inktomi的因特网搜索数据库，是Inktomi的Web缓存产品的主要开发者。|||Brian Totty最近出任了Inktomi公司（这是1996年他参与建立的一家公司）研发部副总裁，在公司中他负责Web缓存、流媒体及因特网搜索技术的研发工作。他曾是Silicon Graphics公司的一名科学家，他在那儿为高性能网络和超级计算机系统设计软件并对其进行优化。在那之前，他是苹果计算机公司高级技术组的一名工程师。',
+    des:'超文本传输协议（Hypertext Transfer Protocol，HTTP）是在万维网上进行通信时所使用的协议方案。HTTP有很多应用，但最著名的是用于web浏览器和web服务器之间的双工通信。|||HTTP起初是一个简单的协议，因此你可能会认为关于这个协议没有太多好说的。但现在，你手上拿着的是却一本两磅重 的书。如果你对我们怎么会写出一本650页 的关于HTTP的书感到奇怪的话，可以去看一下目录。本书不仅仅是一本HTTP首部的参考手册；它是一本名副其实的web结构圣经。|||本书中，我们尝试着将HTTP中一些互相关联且常被误解的规则梳理清楚，并编写了一系列基于各种主题的章节，对HTTP各方面的特性进行了介绍。纵观全书，我们对HTTP“为什么”这样做进行了详细的解释，而不仅仅停留在它是“怎么做”的。而且，为了节省大家寻找参考文献的时间，我们还对很多HTTP应用程序正常工作所必须的、重要的非HTTP技术进行了介绍。在组织得便于使用的附录中，可以找到按照字母排序的首部参考（这些首部构成了最常见的HTTP文本的基础）。我们希望这种概念性的设计有助于读者对HTTP的使用。',
+    downloadUrl:'https://pan.baidu.com/s/1vjzfjKB9eZQjvMDRZ2auHg',
+    downloadCode:'ymms'
+  },{
+    cover:'/coderBooks/wxnqwzn-min.jpg',
+    name:'Web性能权威指南',
+    author: 'Ilya Grigorik',
+    authorDes: '是谷歌“Web加速”（Make The Web Fast）团队的性能工程师、开发大使。他每天的主要工作就是琢磨怎么让Web应用速度更快，总结并推广能够提升应用性能的最佳实践。|||在专注于研究Web性能之前，Ilya创办了PostRank公司并担任CTO，这是一家社交分析公司。他的这家公司被谷歌收购后，成为了Google Analytics中社交分析报告模块的核心。除了研究Web性能和分析，Ilya还会为开源项目做做贡献、看看书，或者写一些好玩的项目，比如VimGolf、GitHub Archive等。',
+    des:'本书是谷歌公司高性能团队核心成员的权威之作，堪称实战经验与规范解读完美结合的产物。本书目标是涵盖Web 开发者技术体系中应该掌握的所有网络及性能优化知识。全书以性能优化为主线，从TCP、UDP 和TLS 协议讲起，解释了如何针对这几种协议和基础设施来优化应用。然后深入探讨了无线和移动网络的工作机制。最后，揭示了HTTP 协议的底层细节，同时详细介绍了HTTP 2.0、 XHR、SSE、WebSocket、WebRTC 和DataChannel 等现代浏览器新增的具有革命性的新能力。',
+    downloadUrl:'https://pan.baidu.com/s/1O6DGtKQSgHQfsNPrgF6aMg',
+    downloadCode:'14vt'
+  }
   // {
   //   cover:'/feBooks/',
   //   name:'',
@@ -423,5 +440,6 @@ let bookData=[
   //   downloadUrl:'',
   //   downloadCode:''
   // },
+
 ]
 export default bookData
