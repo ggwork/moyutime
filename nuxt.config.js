@@ -23,7 +23,7 @@ export default {
       },
       // 全局js
       {
-        src:'/global.js',type:'text/javascript',charset:'utf-8'
+        src:'/global.js',type:'text/javascript',charset:'utf-8',cacheControl:'no-cache'
       }
     ]
   },
