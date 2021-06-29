@@ -35,12 +35,17 @@ export default {
       searchContent:'',
       indexData:[
         {
-          title:'在线工具推荐',
+          title:'办公工具推荐',
           children:[
             {
-              title:'在线办公工具',
+              title:'在线办公工具推荐',
               url:'/onlineTools',
               icon:'/index/icon/onlineTools.svg'
+            },
+            {
+              title:'windows必备工具推荐',
+              url:'/coderTools',
+              icon:'/index/icon/computer.svg'
             }
           ]
         },
