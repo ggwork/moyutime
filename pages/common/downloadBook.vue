@@ -33,28 +33,15 @@
         <div class="d-code">验证码：<span >{{ curBook.downloadCode }}</span></div>
       </div>
     </div>
-
-    <el-dialog
-      :visible.sync="showMoneyDialog"
-      width="30%"
-      center
-      custom-class="bdDialog"
-      @close="hideMoneyDialog"
-      >
-      <div class="bd-title">整理不易，打赏下好不好 (/≧▽≦)/</div>
-      <div class="bd-money">
-        <img src="/index/money.jpg" alt="微信赞赏码"/>
-      </div>
-      <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="hideMoneyDialog">确 定</el-button>
-      </span>
-    </el-dialog>
+    <!-- 打赏 -->
+    <reward :showRewardDialog="showRewardDialog" @hideRewardDialog="hideRewardDialog"></reward>
   </div>
 </template>
 <script>
 import moneyBookData from '@/assets/moneyBooks/bookData.js'
 import feBookData from '@/assets/feBooks/bookData.js'
 import coderBookData from '@/assets/coderBooks/bookData.js'
+import reward from '@/components/common/reward.vue'
 import _ from 'loadsh';
 export default {
   data(){
@@ -63,8 +50,11 @@ export default {
       curBook:{},
       hasClickDownLoad:false,
       recomBookData:[],
-      showMoneyDialog:false
+      showRewardDialog:false
     }
+  },
+  components:{
+    reward
   },
   created(){
     this.init()
@@ -129,7 +119,7 @@ export default {
     },
     downloadFn(){
       window.uMengTj && window.uMengTj('书籍','下载',this.curBook.name)
-      this.showMoneyDialog = true
+      this.showRewardDialog = true
     },
     formatContent(val){
       let valArr = val.split('|||')
@@ -138,8 +128,8 @@ export default {
       })
       return valArr.join('')
     },
-    hideMoneyDialog(){
-      this.showMoneyDialog = false
+    hideRewardDialog(){
+      this.showRewardDialog = false
       this.hasClickDownLoad = true
     },
     goAnotherBook(book){
@@ -271,27 +261,3 @@ export default {
   }
 }
 </style>
-
-<style lang="scss">
-.bdDialog{
-  border-radius: 12px;
-  .bd-title{
-    font-weight:bold;
-    text-align:center;
-    font-size:18px;
-  }
-  .bd-money{
-    width: 200px;
-    height: 200px;
-    margin:auto;
-    margin-top:30px;
-    text-align:center;
-    img{
-      width: 100%;
-      height: 100%;
-      
-    }
-  }
-}
-</style>
-

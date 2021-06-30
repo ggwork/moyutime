@@ -44,8 +44,13 @@ export default {
             },
             {
               title:'windows必备工具推荐',
-              url:'/coderTools',
+              url:'/winSoftware',
               icon:'/index/icon/computer.svg'
+            },
+            {
+              title:'程序员必备工具推荐',
+              url:'/coderSoftware',
+              icon:'/index/icon/codersw.svg'
             }
           ]
         },
