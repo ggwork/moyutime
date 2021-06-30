@@ -26,11 +26,14 @@
     </div>
     <!-- 赞赏按钮 -->
     <reward :showRewardDialog="showRewardDialog" @hideRewardDialog="hideRewardDialog"></reward>
+    <!-- 显示赞赏图标 -->
+    <fixed-reward @clickFixedReward="clickFixedReward"></fixed-reward>
   </div>
 </template>
 <script>
 import reward from '@/components/common/reward.vue'
-import { setTimeout } from 'timers';
+import fixedReward from '@/components/common/fixedReward.vue'
+import { setTimeout, setInterval } from 'timers';
 export default {
   props:{
     terminalType:{
@@ -47,7 +50,8 @@ export default {
     }
   },
   components:{
-    reward
+    reward,
+    fixedReward
   },
   data(){
     return {
@@ -69,6 +73,9 @@ export default {
     },
     hideRewardDialog(){
       this.showRewardDialog = false
+    },
+    clickFixedReward(){
+      this.showRewardDialog = true
     }
   }
 }
@@ -120,6 +127,7 @@ $marTop:10px;
       }
     }
   }
+  
 }
 </style>
 

@@ -133,7 +133,7 @@ let bookData=[
   },
   {
     name:'DeskGo',
-    downloadLink:'https://www.downg.com/soft/192358.html#down',
+    downloadLink:'https://www.downg.com/soft/192358.html',
     directions:'https://www.sohu.com/a/415781437_683794',
     brief:'腾讯出品的免费的桌面整理工具，单独版本，可以将桌面分区，搜索文件，新建映射文件夹等，用起来挺不错的。',
   },
