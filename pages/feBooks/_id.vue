@@ -1,73 +1,35 @@
 <template>
-  <div class="main">
-    <h1 class="m-title">史上最全的{{ bookTypeName }}必备书籍库</h1>
-    <p class="m-des">共收录{{ bookTypeName }}必备书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了{{ bookTypeName }}所有的经典书籍</p>
-    <div class="cont">
-      <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" >
-        <el-col :span="6" v-for="(book,index) in bookArr" :key="index" class="book">
-          <div @click="goDownload(aIndex,index)">
-            <div class="cover"><img :src="book.cover" :alt="book.name" srcset=""></div>
-            <div class="b-des">
-              <h3 class="name">
-                {{book.name}} 
-              </h3>
-              <div class="author">
-                {{book.author}}
-              </div>
-            </div>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
+  <div class="bwrapper">
+     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"  :dataStartIndex="dataStartIndex"></book-list-template>
   </div>
 </template>
 <script>
-
+import bookData from '@/assets/feBooks/bookData.js'
 import _ from 'loadsh';
 export default {
-  props:{
-    bookType:{
-      type:String,
-      required: true
-    },
-    bookTypeName:{
-      type: String,
-      required: true
-    },
-    bookData:{
-      type: Array,
-      required: true
-    },
-    dataStartIndex:{
-      type:Number,
-      required:true,
-      default:0
-    }
-  },
   data(){
     return {
+      bookType:'feBooks',
+      bookTypeName:'前端',
+      bookData:bookData,
       description:''
     }
   },
   created(){
-    console.log('dataStartIndex:',this.dataStartIndex)
+    let dataStartIndex = Math.floor(Number(this.$route.params.id) / 8) || 0
+    this.dataStartIndex = dataStartIndex
     this.description = this.bookData.map(item=>{
       return item.name
     }).join(',')
   },
-  
   computed:{
-    slicedBookData(){
-      let startIndex = this.dataStartIndex*this.$commonData.pageBookNums
-      return this.bookData.slice(startIndex,startIndex+8)
-    },
     splitedTo4BookData(){
-      return _.chunk(this.slicedBookData,4)
+      return _.chunk(this.bookData,4)
     }
   },
   head(){
     return {
-      title:`经典${this.bookTypeName}在线分享`,
+      title:'经典前端书籍在线分享附下载链接',
       meta:[
         {
           name: 'description',
@@ -78,13 +40,6 @@ export default {
           content:this.description
         }
       ]
-    }
-  },
-  methods:{
-    goDownload(aIndex,index){
-      let bIndex = this.dataStartIndex * this.$commonData.pageBookNums + aIndex * 4 + index
-      this.$router.push(`/common/downloadBook?type=${this.bookType}&bIndex=${bIndex}`)
-      window.uMengTj && window.uMengTj(this.bookTypeName,'点击',this.bookData[bIndex].name)
     }
   }
 }

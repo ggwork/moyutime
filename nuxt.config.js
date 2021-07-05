@@ -38,10 +38,10 @@ export default {
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/common.js',
     '@/plugins/element-ui',
     '@/plugins/axios',
     '@/plugins/ctx-error.js',
-    '@/plugins/common.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

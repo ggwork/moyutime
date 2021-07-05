@@ -29,6 +29,45 @@
 </template>
 
 <script>
+import moneyBooksData from '@/assets/moneyBooks/bookData.js'
+import feBooksData from '@/assets/feBooks/bookData.js'
+import coderBooksData from '@/assets/coderBooks/bookData.js'
+// 理财书籍子路由,8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
+let pageBookNums = 8
+function createChildRtouer(title,path,icon,bookData){
+  let childRouter = []
+  bookData.forEach((item,index)=>{
+    if(index % pageBookNums === 0){
+      if(index + pageBookNums < bookData.length){
+        childRouter.push(
+          {
+            title:`${title}${index + 1}-${index + pageBookNums}`,
+            url:`/${path}/${index}`,
+            icon:`/index/icon/${icon}`
+          },
+        )
+      }else{
+        childRouter.push(
+          {
+            title:`${title}${index + 1}-${bookData.length}`,
+            url:`/${path}/${index}`,
+            icon:`/index/icon/${icon}`
+          },
+        )
+      }
+    }
+  })
+  return childRouter
+}
+// 理财书籍
+let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.svg',moneyBooksData)
+// 前端书籍
+let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.svg',feBooksData)
+// 程序员必备书籍
+let coderBooksChildRouter = createChildRtouer('前端书籍','coderbooks','coder.svg',coderBooksData)
+
+
+// 理财书籍子路由,8个为一组
 export default {
   data(){
     return {
@@ -55,24 +94,16 @@ export default {
           ]
         },
         {
-          title:'电子书籍下载',
-          children:[
-            {
-              title:'理财书籍',
-              url:'/moneybooks',
-              icon:'/index/icon/money-bag.svg'
-            },
-            {
-              title:'前端书籍',
-              url:'/febooks',
-              icon:'/index/icon/xiniu.svg'
-            },
-            {
-              title:'程序员必备书籍',
-              url:'/coderBooks',
-              icon:'/index/icon/coder.svg'
-            }
-          ]
+          title:'理财经典书籍下载',
+          children:moneyBooksChildRouter
+        },
+        {
+          title:'前端必备书籍下载',
+          children:feBooksChildRouter
+        },
+        {
+          title:'程序员必备书籍下载',
+          children:coderBooksChildRouter
         }
       ]
     }
