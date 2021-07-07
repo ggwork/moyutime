@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"  :dataStartIndex="dataStartIndex"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData" ></book-list-template>
   </div>
 </template>
 <script>
@@ -16,8 +16,6 @@ export default {
     }
   },
   created(){
-    let dataStartIndex = Math.floor(Number(this.$route.params.id) / 8) || 0
-    this.dataStartIndex = dataStartIndex
     this.description = this.bookData.map(item=>{
       return item.name
     }).join(',')

@@ -8,9 +8,9 @@
     </div>
     <div class="c-cont">
       <div class="nav" v-for="(item,index) in indexData" :key="index">
-        <div class="title">
+        <h3 class="title">
           {{ item.title }}
-        </div>
+        </h3>
         <div class="nav-row">
           <nuxt-link v-for="(child,cIndex) in item.children" :key="'c'+cIndex" :to="{'path':child.url}" class="nav-link">
             <div :span="4" class="nav-item" >
@@ -29,9 +29,29 @@
 </template>
 
 <script>
+// 理财书籍
 import moneyBooksData from '@/assets/moneyBooks/bookData.js'
+// 前端书籍
 import feBooksData from '@/assets/feBooks/bookData.js'
+// 程序员必备书籍
 import coderBooksData from '@/assets/coderBooks/bookData.js'
+// 知乎推荐最高的50本书
+import zhihuBooksData from '@/assets/zhihuBooks/bookData.js'
+// 职场人士必读的20本书
+import professionBooksData from '@/assets/professionBooks/bookData.js'
+//  心理学必读的20本书
+import psychologyBooksData from '@/assets/psychologyBooks/bookData.js'
+// 人生必看的10本书籍
+import lifeBooksData from '@/assets/lifeBooks/bookData.js'
+// 知乎推荐最多的10本小说
+import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
+// 逻辑思维必读的10本书
+import thinkBooksData from '@/assets/thinkBooks/bookData.js'
+// 成大事者必看的10本传记
+import biographyBooksData from '@/assets/biographyBooks/bookData.js'
+
+
+
 // 理财书籍子路由,8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 let pageBookNums = 8
 function createChildRtouer(title,path,icon,bookData){
@@ -64,17 +84,29 @@ let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money
 // 前端书籍
 let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.svg',feBooksData)
 // 程序员必备书籍
-let coderBooksChildRouter = createChildRtouer('前端书籍','coderbooks','coder.svg',coderBooksData)
+let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.svg',coderBooksData)
+// 知乎推荐书籍
+let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.svg',zhihuBooksData)
+// 职场人士必读20本书
+let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.svg',professionBooksData)
+// 心理学必读的20本书
+let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.svg',psychologyBooksData)
+// 人生必看的10本书籍
+let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.svg',lifeBooksData)
+// 知乎推荐最多的10本小说
+let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.svg',zhNovelBooksData)
+// 逻辑思维必读的10本书
+let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.svg',thinkBooksData)
+// 逻辑思维必读的10本书
+let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.svg',biographyBooksData)
 
-
-// 理财书籍子路由,8个为一组
 export default {
   data(){
     return {
       searchContent:'',
       indexData:[
         {
-          title:'办公工具推荐',
+          title:'办公工具推荐下载',
           children:[
             {
               title:'在线办公工具推荐',
@@ -104,7 +136,35 @@ export default {
         {
           title:'程序员必备书籍下载',
           children:coderBooksChildRouter
-        }
+        },
+        {
+          title:'知乎推荐最高的50本书下载',
+          children:zhihuBooksChildRouter
+        },
+        {
+          title:'职场人士必读的20本书',
+          children:professionBooksChildRouter
+        },
+        {
+          title:'心理学必读的20本书',
+          children:psychologyBooksChildRouter
+        },
+        {
+          title:'人生必看的10书下载',
+          children:lifeBooksChildRouter
+        },
+        {
+          title:'知乎推荐最多的10本小说',
+          children:zhNovelBooksChildRouter
+        },
+        {
+          title:'逻辑思维必读的10本书',
+          children:thinkBooksChildRouter
+        },
+        {
+          title:'成大事者必看的10本传记',
+          children:biographyBooksChildRouter
+        },
       ]
     }
   },
@@ -159,6 +219,7 @@ export default {
         font-weight: 18px;
         display: flex;
         align-items: center;
+        font-weight: normal;
         &::before{
           content: '';
           width: 5px;
@@ -172,10 +233,9 @@ export default {
         width: 100%;
         .nav-link{
           text-decoration: none;
-          width: 240px;
           display: inline-block;
           .nav-item{
-            width: 240px;
+            width: 290px;
             background: white;
             margin-top:20px;
             padding:20px;

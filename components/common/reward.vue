@@ -5,6 +5,7 @@
     center
     custom-class="bdDialog"
     @close="hideRewardDialog"
+    :close-on-click-modal="false"
     >
     <div class="bd-title">整理不易，打赏下好不好  (/≧▽≦)/</div>
     <div class="bd-money">

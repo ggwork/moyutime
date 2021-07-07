@@ -2,7 +2,7 @@
   <div class="c-header">
     <div class="c-h-main">
       <div class="c-h-tlogo">
-        <nuxt-link class="title" :to="{'path':'/'}">墨鱼</nuxt-link>
+        <nuxt-link class="title" :to="{'path':'/'}">墨鱼推荐</nuxt-link>
         <!-- <div class="logo"><img src="/index/moyu.png"></div> -->
       </div>
       <div class="search">
