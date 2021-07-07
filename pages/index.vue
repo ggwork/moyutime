@@ -4,6 +4,8 @@
       <ul>
         <li>推荐最好用的工具</li>
         <li>推荐最有益的书籍</li>
+        <li>推荐最好看的电影</li>
+        <li>推荐最有趣的剧集</li>
       </ul>
     </div>
     <div class="c-cont">
