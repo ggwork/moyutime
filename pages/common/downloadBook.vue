@@ -65,6 +65,8 @@ import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
 import thinkBooksData from '@/assets/thinkBooks/bookData.js'
 // 成大事者必看的10本传记
 import biographyBooksData from '@/assets/biographyBooks/bookData.js'
+// 经典武侠小说
+import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
 
 
 import reward from '@/components/common/reward.vue'
@@ -136,6 +138,10 @@ export default {
         case 'biographyBooks':
           this.bookData = biographyBooksData
           break
+        case 'wuxiaBooks':
+          this.bookData = wuxiaBooksData
+          break
+        
         default:
           this.bookData = moneyBooksData
       }

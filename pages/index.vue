@@ -79,6 +79,9 @@ import biographyBooksData from '@/assets/biographyBooks/bookData.js'
 let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.svg',biographyBooksData)
 
 
+//经典的武侠小说10本
+import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
+let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxiaBooks','wuxia.svg',wuxiaBooksData)
 
 // 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 function createChildRtouer(title,path,icon,bookData){
@@ -172,6 +175,10 @@ export default {
         {
           title:'成大事者必看的10本传记',
           children:biographyBooksChildRouter
+        },
+        {
+          title:'经典的武侠小说10本',
+          children:wuxiaBooksChildRouter
         },
       ]
     }
