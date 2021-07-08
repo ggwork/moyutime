@@ -10,39 +10,15 @@ import _ from 'loadsh';
 export default {
   data(){
     return {
-      dataStartIndex:0,
       bookType:'zhihuBooks',
       bookTypeName:'知乎推荐',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
+  components:{
+    bookListTemplate
   },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      title:'知乎推荐最高的50本书附下载链接',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
-  }
+  
 }
 </script>
 <style lang="scss" scoped>

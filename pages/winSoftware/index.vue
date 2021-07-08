@@ -15,11 +15,13 @@ export default {
       softData,
       terminalType:'windows',
       terminalTypeName:'windows',
-      keywords:''
+      keywords:'',
+      description:''
     }
   },
   created(){
     this.keywords = softData.map(item=>{return item.name}).join(' ')
+    this.description = softData.map(item=>item.name+'在线下载').join(',')
   },
   head(){
     return {
@@ -27,7 +29,7 @@ export default {
       meta:[
         {
           name: 'description',
-          content: 'windows必备软件，windows超强使用工具，windows必备工具'
+          content: this.description
         },
         {
           name:'keywords',

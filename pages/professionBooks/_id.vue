@@ -10,39 +10,14 @@ import _ from 'loadsh';
 export default {
   data(){
     return {
-      dataStartIndex:0,
       bookType:'professionBooks',
       bookTypeName:'职场人士',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
+  components:{
+    bookListTemplate
   },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      title:'职场人士必读的20本好书下载',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
-  }
 }
 </script>
 <style lang="scss" scoped>

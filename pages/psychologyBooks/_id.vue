@@ -10,39 +10,14 @@ import _ from 'loadsh';
 export default {
   data(){
     return {
-      dataStartIndex:0,
       bookType:'psychologyBooks',
       bookTypeName:'心理学',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
+  components:{
+    bookListTemplate
   },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      title:'心理学必读的20本书',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
-  }
 }
 </script>
 <style lang="scss" scoped>

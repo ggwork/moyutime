@@ -15,11 +15,13 @@ export default {
       softData,
       terminalType:'coder',
       terminalTypeName:'程序员',
-      keywords:''
+      keywords:'',
+      description:''
     }
   },
   created(){
     this.keywords = softData.map(item=>{return item.name}).join(' ')
+    this.description = softData.map(item=>item.name+'在线下载').join(',')
   },
   head(){
     return {
@@ -27,7 +29,7 @@ export default {
       meta:[
         {
           name: 'description',
-          content: 'w程序员必备软件，程序员超强实用工具，程序员必备工具'
+          content: this.description
         },
         {
           name:'keywords',

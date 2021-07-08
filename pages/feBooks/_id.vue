@@ -5,6 +5,7 @@
 </template>
 <script>
 import bookData from '@/assets/feBooks/bookData.js'
+import bookListTemplate from '@/components/book/bookListTemplate.vue'
 import _ from 'loadsh';
 export default {
   data(){
@@ -12,33 +13,10 @@ export default {
       bookType:'feBooks',
       bookTypeName:'前端',
       bookData:bookData,
-      description:''
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
-  },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      title:'经典前端书籍在线分享附下载链接',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
+  components:{
+    bookListTemplate
   }
 }
 </script>

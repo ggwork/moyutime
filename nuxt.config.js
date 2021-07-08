@@ -7,14 +7,11 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' },
-      { hid: 'description', name: 'description', content: '推荐最好用的工具，推荐最有用的书籍。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://lib.baomitu.com/normalize/4.2.0/normalize.css' },
       { rel: 'stylesheet', type: 'text/css', href: '/global.css' }
-      
     ],
     script: [
       // 友盟
@@ -33,7 +30,7 @@ export default {
     'element-ui/lib/theme-chalk/index.css'
   ],
   server:{
-    port: 3001,
+    port: 4001,
     host:'0.0.0.0'
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

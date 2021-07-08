@@ -13,34 +13,10 @@ export default {
       bookType:'lifeBooks',
       bookTypeName:'人生',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
-  },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      title:'人生必看的10本书籍',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
+  components:{
+    bookListTemplate
   }
 }
 </script>

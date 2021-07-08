@@ -33,30 +33,56 @@
 <script>
 // 理财书籍
 import moneyBooksData from '@/assets/moneyBooks/bookData.js'
+let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.svg',moneyBooksData)
+
 // 前端书籍
 import feBooksData from '@/assets/feBooks/bookData.js'
+let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.svg',feBooksData)
+
+
 // 程序员必备书籍
 import coderBooksData from '@/assets/coderBooks/bookData.js'
+let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.svg',coderBooksData)
+
 // 知乎推荐最高的50本书
 import zhihuBooksData from '@/assets/zhihuBooks/bookData.js'
+let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.svg',zhihuBooksData)
+
+
 // 职场人士必读的20本书
 import professionBooksData from '@/assets/professionBooks/bookData.js'
+let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.svg',professionBooksData)
+
+
 //  心理学必读的20本书
 import psychologyBooksData from '@/assets/psychologyBooks/bookData.js'
+let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.svg',psychologyBooksData)
+
+
 // 人生必看的10本书籍
 import lifeBooksData from '@/assets/lifeBooks/bookData.js'
+let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.svg',lifeBooksData)
+
+
 // 知乎推荐最多的10本小说
 import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
+let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.svg',zhNovelBooksData)
+
+
 // 逻辑思维必读的10本书
 import thinkBooksData from '@/assets/thinkBooks/bookData.js'
+let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.svg',thinkBooksData)
+
+
 // 成大事者必看的10本传记
 import biographyBooksData from '@/assets/biographyBooks/bookData.js'
+let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.svg',biographyBooksData)
 
 
 
-// 理财书籍子路由,8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
-let pageBookNums = 8
+// 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 function createChildRtouer(title,path,icon,bookData){
+  let pageBookNums = 8
   let childRouter = []
   bookData.forEach((item,index)=>{
     if(index % pageBookNums === 0){
@@ -81,26 +107,6 @@ function createChildRtouer(title,path,icon,bookData){
   })
   return childRouter
 }
-// 理财书籍
-let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.svg',moneyBooksData)
-// 前端书籍
-let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.svg',feBooksData)
-// 程序员必备书籍
-let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.svg',coderBooksData)
-// 知乎推荐书籍
-let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.svg',zhihuBooksData)
-// 职场人士必读20本书
-let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.svg',professionBooksData)
-// 心理学必读的20本书
-let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.svg',psychologyBooksData)
-// 人生必看的10本书籍
-let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.svg',lifeBooksData)
-// 知乎推荐最多的10本小说
-let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.svg',zhNovelBooksData)
-// 逻辑思维必读的10本书
-let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.svg',thinkBooksData)
-// 逻辑思维必读的10本书
-let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.svg',biographyBooksData)
 
 export default {
   data(){
@@ -167,6 +173,22 @@ export default {
           title:'成大事者必看的10本传记',
           children:biographyBooksChildRouter
         },
+      ]
+    }
+  },
+  head(){
+    return {
+      // 修改3
+      title:'墨鱼推荐',
+      meta:[
+        {
+          name: 'description',
+          content: '推荐最好用的工具，推荐最有益的书籍，推荐最好看的电影，推荐最有趣的剧集'
+        },
+        {
+          name:'keywords',
+          content: this.indexData.map(item=>item.title).join(',')
+        }
       ]
     }
   },

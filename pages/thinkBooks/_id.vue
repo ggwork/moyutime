@@ -15,36 +15,11 @@ export default {
       bookType:'thinkBooks',  
       bookTypeName:'逻辑思维',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
+  components:{
+    bookListTemplate
   },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      // 修改3
-      title:'逻辑思维必读的10本书',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
-  }
 }
 </script>
 <style lang="scss" scoped>

@@ -15,36 +15,11 @@ export default {
       bookType:'zhNovelBooks',  
       bookTypeName:'知乎推荐最多小说',
       bookData:bookData,
-      description:''
-
     }
   },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
+  components:{
+    bookListTemplate
   },
-  computed:{
-    splitedTo4BookData(){
-      return _.chunk(this.bookData,4)
-    }
-  },
-  head(){
-    return {
-      // 修改3
-      title:'知乎推荐最多的10本小说下载',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
-  }
 }
 </script>
 <style lang="scss" scoped>

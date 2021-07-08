@@ -12,35 +12,11 @@ export default {
       bookType:'coderBooks',
       bookTypeName:'程序员',
       bookData:bookData,
-      description:''
     }
   },
   components:{
     bookListTemplate
-  },
-  created(){
-    this.description = this.bookData.map(item=>{
-      return item.name
-    }).join(',')
-  },
-  head(){
-    return {
-      title:'程序员必备书籍在线分享附下载链接',
-      meta:[
-        {
-          name: 'description',
-          content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
-        }
-      ]
-    }
   }
 }
 </script>
-<style lang="scss" scoped>
-
-</style>
 

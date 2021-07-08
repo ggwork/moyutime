@@ -57,7 +57,7 @@ export default {
     }
     this.startIndex =  pageIndex || 0
     this.description = this.bookData.map(item=>{
-      return item.name
+      return item.name+'pdf在线下载'
     }).join(',')
   },
   
@@ -77,7 +77,7 @@ export default {
   },
   head(){
     return {
-      title:`经典${this.bookTypeName}在线分享`,
+      title:`${this.bookTypeName}必备书籍在线分享`,
       meta:[
         {
           name: 'description',
