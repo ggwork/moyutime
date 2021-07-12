@@ -99,6 +99,16 @@ let bookData=[
     downloadUrl:'https://pan.baidu.com/s/1mZYu4zkQxx_tp4PCq845cA',
     downloadCode:'hwiv'
   },
+  // {
+  //   cover:'/zhihuBooks/',
+  //   name:'',
+  //   author: '',
+  //   authorDes: '',
+  //   des:'',
+  //   outerDownloadUrl:'',
+  //   downloadUrl:'',
+  //   downloadCode:''
+  // },
 ]
 
 export default bookData

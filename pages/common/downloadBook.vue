@@ -68,6 +68,8 @@ import biographyBooksData from '@/assets/biographyBooks/bookData.js'
 // 经典武侠小说
 import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
 
+// 史上最强的50本推理小说
+import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
 
 import reward from '@/components/common/reward.vue'
 import _ from 'loadsh';
@@ -140,6 +142,9 @@ export default {
           break
         case 'wuxiaBooks':
           this.bookData = wuxiaBooksData
+          break
+        case 'detecitveBooks':
+          this.bookData = detecitveBooksData
           break
         
         default:
