@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-    <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+    <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -10,7 +10,7 @@ export default {
   data(){
     return{
       bookType:'biographyBooks',
-      bookTypeName:'成大事必看人物传记',
+      bookTypeTitle:'成大事者必看的10本传记',
       bookData:bookData,
     }
   },

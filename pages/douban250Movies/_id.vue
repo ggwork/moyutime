@@ -1,18 +1,18 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData" ></book-list-template>
   </div>
 </template>
 <script>
+import data from '@/assets/douban250movies/data.js'
 import bookListTemplate from '@/components/book/bookListTemplate.vue'
-import bookData from '@/assets/lifeBooks/bookData.js'
 import _ from 'loadsh';
 export default {
   data(){
     return {
-      bookType:'lifeBooks',
-      bookTypeTitle:'人生必看的10书下载',
-      bookData:bookData,
+      bookType:'douban250movies',
+      bookTypeTitle:'豆瓣top250电影及其下载地址',
+      bookData:data,
     }
   },
   components:{

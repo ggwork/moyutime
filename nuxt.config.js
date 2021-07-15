@@ -30,7 +30,7 @@ export default {
     'element-ui/lib/theme-chalk/index.css'
   ],
   server:{
-    port: 3001,
+    port: 4001,
     host:'0.0.0.0'
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

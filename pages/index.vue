@@ -88,6 +88,10 @@ let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxi
 import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
 let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小说','detecitveBooks','yandou.svg',detecitveBooksData)
 
+// 豆瓣Top250电影在线下载
+import douban250moviesData from '@/assets/douban250movies/data.js'
+let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.svg',douban250moviesData)
+
 // 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 function createChildRtouer(title,path,icon,bookData){
   let pageBookNums = 8
@@ -158,11 +162,11 @@ export default {
           children:zhihuBooksChildRouter
         },
         {
-          title:'职场人士必读的20本书',
+          title:'职场人士必读的20本书籍下载',
           children:professionBooksChildRouter
         },
         {
-          title:'心理学必读的20本书',
+          title:'心理学必读的20本书籍下载',
           children:psychologyBooksChildRouter
         },
         {
@@ -182,12 +186,22 @@ export default {
           children:biographyBooksChildRouter
         },
         {
-          title:'经典的武侠小说10本',
+          title:'最经典的10本武侠小说',
           children:wuxiaBooksChildRouter
         },
         {
           title:'史上最强的50本推理小说',
           children:detecitveBooksChildRouter
+        },
+        {
+          title:'豆瓣Top250电影在线下载',
+          children:[
+            {
+              title:'豆瓣Top250电影在线下载',
+              url:'/douban250movies/0',
+              icon:'/index/icon/movie.svg'
+            }
+          ]
         },
       ]
     }

@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
   data(){
     return {
       bookType:'psychologyBooks',
-      bookTypeName:'心理学',
+      bookTypeTitle:'心理学必读的20本书籍下载',
       bookData:bookData,
     }
   },

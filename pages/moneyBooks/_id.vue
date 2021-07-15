@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
   data(){
     return {
       bookType:'moneyBooks',
-      bookTypeName:'理财',
+      bookTypeTitle:'史上最全的理财书籍推荐',
       bookData:bookData,
     }
   },

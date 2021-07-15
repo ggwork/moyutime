@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
   data(){
     return {
       bookType:'wuxiaBooks',
-      bookTypeName:'经典武侠小说',
+      bookTypeTitle:'最经典的10本武侠小说',
       bookData:bookData,
     }
   },

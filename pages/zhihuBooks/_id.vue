@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-     <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+     <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
   data(){
     return {
       bookType:'zhihuBooks',
-      bookTypeName:'知乎推荐',
+      bookTypeTitle:'知乎推荐最高的50本书下载',
       bookData:bookData,
     }
   },

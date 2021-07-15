@@ -1,6 +1,6 @@
 <template>
   <div class="bwrapper">
-    <book-list-template :bookType="bookType" :bookTypeName="bookTypeName" :bookData="bookData"></book-list-template>
+    <book-list-template :bookType="bookType" :bookTypeTitle="bookTypeTitle" :bookData="bookData"></book-list-template>
   </div>
 </template>
 <script>
@@ -10,7 +10,7 @@ export default {
   data(){
     return{
       bookType:'detecitveBooks',
-      bookTypeName:'推理小说',
+      bookTypeTitle:'史上最强的50本推理小说',
       bookData:bookData,
     }
   },

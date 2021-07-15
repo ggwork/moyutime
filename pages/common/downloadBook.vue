@@ -6,10 +6,10 @@
       </div>
       <div class="b-right">
         <h1 class="b-name">{{ curBook.name }}</h1>
-        <h1 class="b-author">作者：{{ curBook.author }}</h1>
+        <h1 class="b-author">{{curTypeData.authorName}}：{{ curBook.author }}</h1>
       </div>
       <div class="recom">
-        <div class="re-title">你可以能感兴趣的书籍</div>
+        <div class="re-title">你可以能感兴趣的{{ curTypeData.typeName }}</div>
         <ul>
           <li v-for="(book,index) in recomBookData" :key="index" @click="goAnotherBook(book)">
             {{ book.name}}
@@ -17,12 +17,12 @@
         </ul>
       </div>
     </div>
-    <div class="info">
-      <div class="title">作者简介：</div>
+    <div class="info" v-if="!!curBook.authorDes">
+      <div class="title">{{curTypeData.authorName}}简介：</div>
       <div class="cont" v-html="curBook.authorDes"></div>
     </div>
     <div class="info">
-      <div class="title">书籍信息：</div>
+      <div class="title">{{ curTypeData.typeName }}信息：</div>
       <div class="cont" v-html="curBook.des"></div>
     </div>
     <div class="info">
@@ -67,9 +67,12 @@ import thinkBooksData from '@/assets/thinkBooks/bookData.js'
 import biographyBooksData from '@/assets/biographyBooks/bookData.js'
 // 经典武侠小说
 import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
-
 // 史上最强的50本推理小说
 import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
+
+// 豆瓣Top250电影在线下载
+
+import douban250moviesData from '@/assets/douban250movies/data.js'
 
 import reward from '@/components/common/reward.vue'
 import _ from 'loadsh';
@@ -82,7 +85,19 @@ export default {
       outerDownloadClicked :false, // 是否显示外网下载地址
       recomBookData:[],
       showRewardDialog:false,
-      clickType:''
+      typeDataObj:{
+        'books':{
+          typeName:'书籍',
+          authorName:'作者',
+          downloadType:'pdf'
+        },
+        'movies':{
+          typeName:'电影',
+          authorName:'导演',
+          downloadType:'种子'
+        },
+      },
+      curTypeData:{}
     }
   },
   components:{
@@ -90,10 +105,11 @@ export default {
   },
   created(){
     this.init()
+    this.initTypeObj()
   },
   head(){
     return {
-      title:this.curBook.name + 'pdf在线下载',
+      title:this.curBook.name + '在线下载',
       meta:[
         {
           name: 'description',
@@ -101,7 +117,7 @@ export default {
         },  
         {
           name:'keywords',
-          content:'《' + this.curBook.name + '》pdf在线下载',
+          content: this.curBook.name + '在线下载',
         }
       ]
     }
@@ -109,6 +125,7 @@ export default {
   methods:{
     init(){
       let type = this.$route.query.type
+      console.log('this.$route.query.type:',this.$route.query.type)
       switch(type){
         case 'moneyBooks':
           this.bookData = moneyBooksData
@@ -146,6 +163,9 @@ export default {
         case 'detecitveBooks':
           this.bookData = detecitveBooksData
           break
+        case 'douban250movies':
+          this.bookData = douban250moviesData
+          break
         
         default:
           this.bookData = moneyBooksData
@@ -153,7 +173,7 @@ export default {
       let bIndex = this.$route.query.bIndex
       let curBook = this.bookData[bIndex]
       if(!this.curBook){
-        this.$alert('您查找的书籍不存在，请从书籍页重新进入！','提示',{
+        this.$alert(`您查找的${this.curTypeData.typeName}不存在，请从首页重新进入！`,'提示',{
           confirmButtonText: '确定',
           callback: action => {
               this.$router.back()
@@ -162,37 +182,51 @@ export default {
         return
       }
       // 对作者信息和书籍段落做格式化处理
-      curBook.cover = curBook.cover.replace('-min','')
       curBook.authorDes = this.formatContent(curBook.authorDes)
       curBook.des = this.formatContent(curBook.des)
       this.curBook = curBook
       // 从书籍信息中随机选取7个推荐
       this.recomBookData = _.sampleSize(this.bookData,7)
+
+    },
+    initTypeObj(){
+      let type = this.$route.query.type.toLowerCase()
+      if(type.indexOf('books')>-1){
+        this.curTypeData = this.typeDataObj['books']
+      }else if(type.indexOf('movies')>-1){
+        this.curTypeData = this.typeDataObj['movies']
+      }else{
+        return undefined
+      }
     },
     changeBook(index){
       let curBook = this.bookData[index]
       // 对作者信息和书籍段落做格式化处理
-      curBook.cover = curBook.cover.replace('-min','')
       curBook.authorDes = this.formatContent(curBook.authorDes)
       curBook.des = this.formatContent(curBook.des)
       this.curBook = curBook
     },
     outerDownloadFn(){
-      window.uMengTj && window.uMengTj('书籍','下载',this.curBook.name)
+      window.uMengTj && window.uMengTj(this.curTypeData.typeName,'下载',this.curBook.name)
       this.showRewardDialog = true
       this.outerDownloadClicked = true
     },
     downloadFn(){
-      window.uMengTj && window.uMengTj('书籍','下载',this.curBook.name)
+      window.uMengTj && window.uMengTj(this.curTypeData.typeName,'下载',this.curBook.name)
       this.showRewardDialog = true
       this.hasClickDownLoad = true
     },
     formatContent(val){
-      let valArr = val.split('|||')
-      valArr = valArr.map(item=>{
-        return `<p>${item}</p>`
-      })
-      return valArr.join('')
+      if(val.indexOf('|||')>-1){
+        let valArr = val.split('|||')
+        valArr = valArr.map(item=>{
+          return `<p>${item}</p>`
+        })
+        return valArr.join('')
+      }else{
+        return val
+      }
+      
     },
     hideRewardDialog(){
       this.showRewardDialog = false
@@ -207,7 +241,7 @@ export default {
         // this.$router.push('/common/downloadBook?bIndex='+index)
         this.changeBook(index)
       }else{
-        this.$confirm('出错了，要查找的书籍不存在！','提示',{
+        this.$confirm('出错了，要查找的资源不存在！','提示',{
           confirmButtonText: '去首页',
           cancelButtonText: '取消',
           type: 'warning'
@@ -216,10 +250,6 @@ export default {
         })
       }
     },
-    // beforeRouteEnter(){
-    //   console.log('beforeRouteEnter')
-    //   this.init()
-    // }
   }
 }
 </script>

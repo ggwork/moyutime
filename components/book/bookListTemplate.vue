@@ -1,7 +1,6 @@
 <template>
   <div class="main">
-    <h1 class="m-title">史上最全的{{ bookTypeName }}必备书籍库</h1>
-    <p class="m-des">共收录{{ bookTypeName }}必备书籍<span class="warnning">{{ bookData.length }}</span>本，几乎涵盖了{{ bookTypeName }}所有的经典书籍</p>
+    <h1 class="m-title">{{bookTypeTitle}}</h1>
     <div class="cont">
       <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" >
         <el-col :span="6" v-for="(book,index) in bookArr" :key="index" class="book">
@@ -35,7 +34,7 @@ export default {
       type:String,
       required: true
     },
-    bookTypeName:{
+    bookTypeTitle:{
       type: String,
       required: true
     },
@@ -57,11 +56,12 @@ export default {
     }
     this.startIndex =  pageIndex || 0
     this.description = this.bookData.map(item=>{
-      return item.name+'pdf在线下载'
+      return item.name+'在线下载'
     }).join(',')
   },
   
   computed:{
+    
     slicedBookData(){
       return this.bookData.slice(this.startIndex, this.startIndex + this.$commonData.pageBookNums)
     },
@@ -77,16 +77,17 @@ export default {
   },
   head(){
     return {
-      title:`${this.bookTypeName}必备书籍在线分享`,
+      title:this.bookTypeTitle,
       meta:[
+        {
+          name:'keywords',
+          content:'豆瓣 知乎 电影 书籍 在线下载 pdf 种子 torrent bt 排行榜'
+        },
         {
           name: 'description',
           content: this.description
-        },
-        {
-          name:'keywords',
-          content:this.description
         }
+        
       ]
     }
   },
