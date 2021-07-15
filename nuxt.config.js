@@ -7,6 +7,10 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      // 搜狗站点管理
+      { name: 'sogou_site_verification',content:'o8lhAiDmil' },  
+      // 百度站点管理
+      { name: 'baidu-site-verification',content:'code-qtOpZuPaTl' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
