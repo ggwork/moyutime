@@ -33,64 +33,64 @@
 <script>
 // 理财书籍
 import moneyBooksData from '@/assets/moneyBooks/bookData.js'
-let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.svg',moneyBooksData)
+let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.png',moneyBooksData)
 
 // 前端书籍
 import feBooksData from '@/assets/feBooks/bookData.js'
-let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.svg',feBooksData)
+let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.png',feBooksData)
 
 
 // 程序员必备书籍
 import coderBooksData from '@/assets/coderBooks/bookData.js'
-let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.svg',coderBooksData)
+let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.png',coderBooksData)
 
 // 知乎推荐最高的50本书
 import zhihuBooksData from '@/assets/zhihuBooks/bookData.js'
-let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.svg',zhihuBooksData)
+let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.png',zhihuBooksData)
 
 
 // 职场人士必读的20本书
 import professionBooksData from '@/assets/professionBooks/bookData.js'
-let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.svg',professionBooksData)
+let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.png',professionBooksData)
 
 
 //  心理学必读的20本书
 import psychologyBooksData from '@/assets/psychologyBooks/bookData.js'
-let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.svg',psychologyBooksData)
+let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.png',psychologyBooksData)
 
 
 // 人生必看的10本书籍
 import lifeBooksData from '@/assets/lifeBooks/bookData.js'
-let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.svg',lifeBooksData)
+let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.png',lifeBooksData)
 
 
 // 知乎推荐最多的10本小说
 import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
-let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.svg',zhNovelBooksData)
+let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.png',zhNovelBooksData)
 
 
 // 逻辑思维必读的10本书
 import thinkBooksData from '@/assets/thinkBooks/bookData.js'
-let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.svg',thinkBooksData)
+let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.png',thinkBooksData)
 
 
 // 成大事者必看的10本传记
 import biographyBooksData from '@/assets/biographyBooks/bookData.js'
-let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.svg',biographyBooksData)
+let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.png',biographyBooksData)
 
 
 //经典的武侠小说10本
 import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
-let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxiaBooks','wuxia.svg',wuxiaBooksData)
+let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxiaBooks','wuxia.png',wuxiaBooksData)
 
 
 // 史上最强的50本推理小说
 import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
-let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小说','detecitveBooks','yandou.svg',detecitveBooksData)
+let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小说','detecitveBooks','yandou.png',detecitveBooksData)
 
 // 豆瓣Top250电影在线下载
 import douban250moviesData from '@/assets/douban250movies/data.js'
-let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.svg',douban250moviesData)
+let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.png',douban250moviesData)
 
 // 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 function createChildRtouer(title,path,icon,bookData){
@@ -131,17 +131,17 @@ export default {
             {
               title:'在线办公工具推荐',
               url:'/onlineTools',
-              icon:'/index/icon/onlineTools.svg'
+              icon:'/index/icon/onlineTools.png'
             },
             {
               title:'windows必备工具推荐',
               url:'/winSoftware',
-              icon:'/index/icon/computer.svg'
+              icon:'/index/icon/computer.png'
             },
             {
               title:'程序员必备工具推荐',
               url:'/coderSoftware',
-              icon:'/index/icon/codersw.svg'
+              icon:'/index/icon/codersw.png'
             }
           ]
         },
@@ -199,7 +199,7 @@ export default {
             {
               title:'豆瓣Top250电影在线下载',
               url:'/douban250movies/0',
-              icon:'/index/icon/movie.svg'
+              icon:'/index/icon/movie.png'
             }
           ]
         },
