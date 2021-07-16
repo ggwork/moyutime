@@ -10,7 +10,7 @@ export default function({ $axios }) {
     } else {
       const res = response.data
       if (res.code !== 0) {
-        this.$message({
+        window.$nuxt.$message({
           message: res.msg || 'Error',
         })
         return new Promise(()=>{})
@@ -21,7 +21,7 @@ export default function({ $axios }) {
     
   })
   $axios.onError(error => {
-    this.$message({
+    window.$nuxt.$message({
       message: error.message,
     })
     return Promise.reject(error)

@@ -31,71 +31,70 @@
 </template>
 
 <script>
+import allData from '@/assets/allData.js'
+// console.log('allData:',allData)
 // 理财书籍
-import moneyBooksData from '@/assets/moneyBooks/bookData.js'
-let moneyBooksChildRouter = createChildRtouer('理财书籍','moneybooks','money-bag.png',moneyBooksData)
-
+let moneyBooksChildRouter = createChildRtouer('理财书籍','moneyBooks','money-bag.png')
 // 前端书籍
-import feBooksData from '@/assets/feBooks/bookData.js'
-let feBooksChildRouter = createChildRtouer('前端书籍','febooks','xiniu.png',feBooksData)
-
-
+let feBooksChildRouter = createChildRtouer('前端书籍','feBooks','xiniu.png')
 // 程序员必备书籍
-import coderBooksData from '@/assets/coderBooks/bookData.js'
-let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderbooks','coder.png',coderBooksData)
-
+let coderBooksChildRouter = createChildRtouer('程序员必备书籍','coderBooks','coder.png')
 // 知乎推荐最高的50本书
-import zhihuBooksData from '@/assets/zhihuBooks/bookData.js'
-let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihubooks','zhihu.png',zhihuBooksData)
-
-
+let zhihuBooksChildRouter = createChildRtouer('知乎推荐最高的50本书','zhihuBooks','zhihu.png')
 // 职场人士必读的20本书
-import professionBooksData from '@/assets/professionBooks/bookData.js'
-let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.png',professionBooksData)
-
-
+let professionBooksChildRouter = createChildRtouer('职场人士必读的20本书','professionBooks','profession.png')
 //  心理学必读的20本书
-import psychologyBooksData from '@/assets/psychologyBooks/bookData.js'
-let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.png',psychologyBooksData)
-
-
+let psychologyBooksChildRouter = createChildRtouer('心理学必读的20本书','psychologyBooks','heart.png')
 // 人生必看的10本书籍
-import lifeBooksData from '@/assets/lifeBooks/bookData.js'
-let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.png',lifeBooksData)
-
-
+let lifeBooksChildRouter = createChildRtouer('人生必看的10本书','lifeBooks','life.png')
 // 知乎推荐最多的10本小说
-import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
-let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.png',zhNovelBooksData)
-
-
+let zhNovelBooksChildRouter = createChildRtouer('知乎推荐最多的10本小说','zhNovelBooks','novel.png')
 // 逻辑思维必读的10本书
-import thinkBooksData from '@/assets/thinkBooks/bookData.js'
-let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.png',thinkBooksData)
-
-
+let thinkBooksChildRouter = createChildRtouer('逻辑思维必读的10本书','thinkBooks','think.png')
 // 成大事者必看的10本传记
-import biographyBooksData from '@/assets/biographyBooks/bookData.js'
-let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.png',biographyBooksData)
-
-
+let biographyBooksChildRouter = createChildRtouer('成大事者必看的10本传记','biographyBooks','biography.png')
 //经典的武侠小说10本
-import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
-let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxiaBooks','wuxia.png',wuxiaBooksData)
-
-
+let wuxiaBooksChildRouter = createChildRtouer('经典的武侠小说10本','wuxiaBooks','wuxia.png')
 // 史上最强的50本推理小说
-import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
-let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小说','detecitveBooks','yandou.png',detecitveBooksData)
-
+let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小说','detecitveBooks','yandou.png')
 // 豆瓣Top250电影在线下载
-import douban250moviesData from '@/assets/douban250movies/data.js'
-let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.png',douban250moviesData)
+let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.png')
+
+
+// 生成下载路由
+// http://www.boya888.xyz/common/downloadBook?type=moneyBooks&bIndex=0
+function createDownloadUrl(){
+  let keys = Object.keys(allData)
+  let downloadUrls = []
+  for(let key of keys){
+    let data = allData[key].data
+    for(let i = 0; i < data.length; i++){
+      downloadUrls.push(`http://www.boya888.xyz/common/downloadBook?type=${key}&bIndex=${i}`)
+    }
+  }
+  return downloadUrls
+}
+// 向百度提交页面链接，便于百度收录页面地址
+function getAllWebsiteUrl(){
+    // 一级页面路由
+    let l1Urls = ['http://www.boya888.xyz','http://boya888.xyz']
+    // 二级路由
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter)
+    let l2Urls = tempL2Urls.map((cur)=>{
+      return 'http://www.boya888.xyz' + cur.url
+    }).concat('http://www.boya888.xyz/onlineTools','http://www.boya888.xyz/winSoftware','http://www.boya888.xyz/coderSoftware')
+    let downloadUrls = createDownloadUrl()
+    let allUrl = l1Urls.concat(l2Urls,downloadUrls)
+    // console.log('allUrl:',allUrl.join('\n'))
+}
+
+getAllWebsiteUrl()
 
 // 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
-function createChildRtouer(title,path,icon,bookData){
+function createChildRtouer(title,path,icon){
   let pageBookNums = 8
   let childRouter = []
+  let bookData = allData[path].data
   bookData.forEach((item,index)=>{
     if(index % pageBookNums === 0){
       if(index + pageBookNums < bookData.length){
@@ -119,6 +118,9 @@ function createChildRtouer(title,path,icon,bookData){
   })
   return childRouter
 }
+
+
+
 
 export default {
   data(){
@@ -235,6 +237,9 @@ export default {
     goChildPage(url){
       this.$router.push(url)
     }
+  },
+  created(){
+    
   }
 }
 </script>

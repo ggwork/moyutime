@@ -48,38 +48,13 @@
   </div>
 </template>
 <script>
-import moneyBooksData from '@/assets/moneyBooks/bookData.js'
-import feBooksData from '@/assets/feBooks/bookData.js'
-import coderBooksData from '@/assets/coderBooks/bookData.js'
-// 知乎推荐
-import zhihuBooksData from '@/assets/zhihuBooks/bookData.js'
-// 职场人士必读的20本书
-import professionBooksData from '@/assets/professionBooks/bookData.js'
-//  心理学必读的20本书
-import psychologyBooksData from '@/assets/psychologyBooks/bookData.js'
-// 人生必看的10本书籍
-import lifeBooksData from '@/assets/lifeBooks/bookData.js'
-// 知乎推荐最多的10本小说
-import zhNovelBooksData from '@/assets/zhNovelBooks/bookData.js'
-// 逻辑思维必读的10本书
-import thinkBooksData from '@/assets/thinkBooks/bookData.js'
-// 成大事者必看的10本传记
-import biographyBooksData from '@/assets/biographyBooks/bookData.js'
-// 经典武侠小说
-import wuxiaBooksData from '@/assets/wuxiaBooks/bookData.js'
-// 史上最强的50本推理小说
-import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
-
-// 豆瓣Top250电影在线下载
-
-import douban250moviesData from '@/assets/douban250movies/data.js'
-
 import reward from '@/components/common/reward.vue'
+import allData from '@/assets/allData.js'
 import _ from 'loadsh';
 export default {
   data(){
     return {
-      bookData:moneyBooksData,
+      bookData:[],
       curBook:{},
       hasClickDownLoad:false,
       outerDownloadClicked :false, // 是否显示外网下载地址
@@ -125,51 +100,7 @@ export default {
   methods:{
     init(){
       let type = this.$route.query.type
-      console.log('this.$route.query.type:',this.$route.query.type)
-      switch(type){
-        case 'moneyBooks':
-          this.bookData = moneyBooksData
-          break
-        case 'feBooks':
-          this.bookData = feBooksData
-          break
-        case 'coderBooks':
-          this.bookData = coderBooksData
-          break
-        case 'zhihuBooks':
-          this.bookData = zhihuBooksData
-          break
-        case 'professionBooks':
-          this.bookData = professionBooksData
-          break
-        case 'psychologyBooks':
-          this.bookData = psychologyBooksData
-          break
-        case 'lifeBooks':
-          this.bookData = lifeBooksData
-          break
-        case 'zhNovelBooks':
-          this.bookData = zhNovelBooksData
-          break
-        case 'thinkBooks':
-          this.bookData = thinkBooksData
-          break
-        case 'biographyBooks':
-          this.bookData = biographyBooksData
-          break
-        case 'wuxiaBooks':
-          this.bookData = wuxiaBooksData
-          break
-        case 'detecitveBooks':
-          this.bookData = detecitveBooksData
-          break
-        case 'douban250movies':
-          this.bookData = douban250moviesData
-          break
-        
-        default:
-          this.bookData = moneyBooksData
-      }
+      this.bookData = allData[type].data
       let bIndex = this.$route.query.bIndex
       let curBook = this.bookData[bIndex]
       if(!this.curBook){
