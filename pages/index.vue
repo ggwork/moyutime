@@ -84,7 +84,7 @@ function getAllWebsiteUrl(){
     // 一级页面路由
     let l1Urls = ['http://www.boya888.xyz','http://boya888.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvs)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.boya888.xyz' + cur.url
     }).concat('http://www.boya888.xyz/onlineTools','http://www.boya888.xyz/winSoftware','http://www.boya888.xyz/coderSoftware')
