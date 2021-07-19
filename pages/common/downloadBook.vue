@@ -71,6 +71,11 @@ export default {
           authorName:'导演',
           downloadType:'种子'
         },
+        'tvs':{
+          typeName:'剧集',
+          authorName:'导演',
+          downloadType:'种子'
+        },
       },
       curTypeData:{}
     }
@@ -126,8 +131,8 @@ export default {
         this.curTypeData = this.typeDataObj['books']
       }else if(type.indexOf('movies')>-1){
         this.curTypeData = this.typeDataObj['movies']
-      }else{
-        return undefined
+      }else if(type.indexOf('tvs')>-1){
+        this.curTypeData = this.typeDataObj['tvs']
       }
     },
     changeBook(index){
