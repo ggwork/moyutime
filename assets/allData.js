@@ -25,6 +25,12 @@ import detecitveBooksData from '@/assets/detecitveBooks/bookData.js'
 // 豆瓣Top250电影在线下载
 import douban250moviesData from '@/assets/douban250movies/data.js'
 
+// 豆瓣评分最高的10部日剧
+import douban10JanTvsData from '@/assets/douban10JanTvs/data.js'
+
+// 豆瓣评分9分以上的日剧
+import doubanGrade9JanTvsData from '@/assets/doubanGrade9JanTvs/data.js'
+
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -64,6 +70,12 @@ export default  {
   },
   douban250movies:{
     data:douban250moviesData
+  },
+  douban10JanTvs:{
+    data:douban10JanTvsData
+  },
+  doubanGrade9JanTvs:{
+    data:doubanGrade9JanTvsData
   }
   
 }

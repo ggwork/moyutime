@@ -60,6 +60,11 @@ let detecitveBooksChildRouter = createChildRtouer('史上最强的50本推理小
 // 豆瓣Top250电影在线下载
 let douban250moviesChildRouter = createChildRtouer('豆瓣Top250电影在线下载','douban250movies','movie.png')
 
+// 豆瓣评分最高的10部日剧
+let douban10JanTvsChildRouter = createChildRtouer('豆瓣评分最高的10部日剧','douban10JanTvs','rj.png')
+
+// 豆瓣9分以上超好看的日剧
+let doubanGrade9JanTvsChildRouter = createChildRtouer('豆瓣9分以上超好看的日剧','doubanGrade9JanTvs','ta.png')
 
 // 生成下载路由
 // http://www.boya888.xyz/common/downloadBook?type=moneyBooks&bIndex=0
@@ -79,7 +84,7 @@ function getAllWebsiteUrl(){
     // 一级页面路由
     let l1Urls = ['http://www.boya888.xyz','http://boya888.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvs)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.boya888.xyz' + cur.url
     }).concat('http://www.boya888.xyz/onlineTools','http://www.boya888.xyz/winSoftware','http://www.boya888.xyz/coderSoftware')
@@ -196,12 +201,27 @@ export default {
           children:detecitveBooksChildRouter
         },
         {
-          title:'豆瓣Top250电影在线下载',
+          title:'电影',
           children:[
             {
               title:'豆瓣Top250电影在线下载',
               url:'/douban250movies/0',
               icon:'/index/icon/movie.png'
+            }
+          ]
+        },
+        {
+          title:'剧集',
+          children:[
+            {
+              title:'豆瓣评分最高的10部日剧',
+              url:'/douban10JanTvs/0',
+              icon:'/index/icon/rj.png'
+            },
+            {
+              title:'豆瓣9分以上超好看的日剧',
+              url:'/doubanGrade9JanTvs/0',
+              icon:'/index/icon/ta.png'
             }
           ]
         },
