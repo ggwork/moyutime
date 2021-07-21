@@ -42,6 +42,7 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *::before,
 *::after {
@@ -50,5 +51,6 @@ html {
 }
 .b-main{
   margin:auto;
+  width:1200px;
 }
 </style>
