@@ -51,6 +51,6 @@ html {
 }
 .b-main{
   margin:auto;
-  width:1200px;
+  min-width: 1200px;
 }
 </style>
