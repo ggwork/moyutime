@@ -120,55 +120,75 @@ let bookData=[
     downloadCode:'dvb6'
   },
   {
-    cover:'/gongqijunMovies/',
-    name:'听见涛声',
-    author: '',
+    cover:'/gongqijunMovies/tdts.webp',
+    name:'听到涛声',
+    author: '望月智充',
     authorDes: '',
-    des:'',
+    des:'高二那年夏天，美丽的女孩武藤里伽子（坂本洋子 配音）随母亲离开大都会东京，来到了古朴幽静的高知。聪慧美丽的里伽子在这个偏僻的小地方如此靓丽，引来了男孩们的爱恋的目光，而她孤高的性格又让女孩们颇多微词。与她同班的班长松野丰（関俊彦 饰）偷偷喜欢着她，而松野的好友杜崎拓（飛田展男 饰）似乎也对里伽子颇为关注。在黄金周中，里伽子约上拓一同返回东京，拓也第一次感知到这个看似冰冷的女孩内心中最脆弱的情感。他们仿佛走得更近，又仿佛相隔更远……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfG3uW4Xg5MMIJ5tEz23LBdA1',
+    downloadCode:'i826'
   },
   {
-    cover:'/gongqijunMovies/',
-    name:'',
-    author: '',
+    cover:'/gongqijunMovies/bblm.webp',
+    name:'百变狸猫',
+    author: '高畑勋',
     authorDes: '',
-    des:'',
+    des:'随着人类文明的发展，城市的规模越来越大，与之相对，青山绿水则迅速减少。东京都提出“多摩新市”的概念，大肆向周边的原始森林扩张。祖辈生长在多摩丘陵的狸猫家族受到巨大冲击，随着树木花草的急剧减少，可供它们生存的食物也开始短缺。最终，鹰之森和玲之森的狸猫发生内战，战况激烈。在火玉婆婆的点拨下，两派狸猫握手言和，转而将主要目标对准破坏森林的人类。为了更好地了解对手，火玉婆婆和龟鹤和尚教授族人已被遗忘很久的变化之术。经过一段时间的艰苦修行，狸猫们终于学会了自由变化。在激进派代表权太的领导下，一部分狸猫向建筑工人发起恐怖袭击，造成多人伤亡。它们的行动虽然取得成效，然而却无法阻挡利益熏心的人类的脚步。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfG4G1MRCOlliexZ0K_W-fjA1',
+    downloadCode:'6jvi'
   },
   {
-    cover:'/gongqijunMovies/',
-    name:'',
-    author: '',
+    cover:'/gongqijunMovies/xysdjyj.webp',
+    name:'悬崖上的金鱼姬',
+    author: '宫崎骏',
     authorDes: '',
-    des:'',
+    des:'金鱼姬是一条活泼好动的小鱼，一次偶然的机会，它在涨潮时被冲进了玻璃瓶中无法脱身。此时，刚好来海边度假的男孩宗介路过，帮它解困，从此人鱼相识。宗介把金鱼抱回家里喂养，一起玩耍，感情甚笃。由于海员父亲终日出航，宗介只得跟母亲相依为命，这让他的性格孤僻自闭，甚至对长辈也不理不睬。但是，遇到金鱼姬后，宗介逐渐改变了对生活的冷漠态度，这也让他慢慢修复了性格中的缺陷。一次意外的海啸中，宗介撞伤了身体，金鱼姬沾染到了人类的血，飘回了大海之中。原来海洋中还有另外一个世界，那里有个操控水文环境的古怪男子藤本，因为发现了人类污染环境的丑陋，所以自造了另一个水中世界。他发现金鱼姬沾染了人气，正准备用魔法将它打回原形，却事与愿违……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfGdfJEaMKM6XGCnsTwCZMtA1',
+    downloadCode:'wtdv'
   },
   {
-    cover:'/gongqijunMovies/',
-    name:'',
-    author: '',
+    cover:'/gongqijunMovies/tkzc.webp',
+    name:'天空之城',
+    author: '宫崎骏',
     authorDes: '',
-    des:'',
+    des:'古老帝国拉比达是一座漂浮在空中的巨大的机器岛，传说那里已经无人居住，蕴藏着巨大的财富。因此，无论军方还是海盗，都在找寻着这座传说中的飞行岛。|||矿工帕克这天偶遇拉比达继承人希达，两人一见如故。因为希达身上有找寻拉比达帝国的重要物件飞行石，军方和海盗两帮人马都在追杀希达。帕克带着希达一起逃亡，最终都没有逃出军方的手中，希达被军队掳走了。|||为救朋友，帕克只能选择与海盗合作。帕克与海盗成功救出了希达，同时，他们也发现了军方的邪恶计划。为了阻止军方邪恶计划的实施，他们和海盗一起踏上了寻找拉比达之旅。 ',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfGe4NGTMeXE2V67xHIndB6A1',
+    downloadCode:'wbwi'
   },
   {
-    cover:'/gongqijunMovies/',
-    name:'',
-    author: '',
+    cover:'/gongqijunMovies/mykxdwg.webp',
+    name:'梦与狂想的王国',
+    author: '砂田麻美',
     authorDes: '',
-    des:'',
+    des:'在日本东京都小金井市的梶野町，有一个全世界动画迷都心驰神往的圣地。声名显赫的吉卜力工作室，在绿萝藤蔓的点缀下宛若圣境。70岁高龄的宫崎骏从未放下手中的画笔，此刻他将面对自身最大的矛盾——对飞行器的热爱和战斗机作为杀人武器的罪恶属性，极具私人情怀的《起风了》在斑斓的阳光辉映下静静诞生。与此同时，与宫先生相交超过三十多年的铃木敏夫，作为制作人细心周到地打理着工作室的大小事务。另一头的工作室，曾经因《我的邻居山田君》铩羽而归的高畑勋正在制作他的新片《辉夜姬物语》，只是不断拖延的进度看来很难赶上和《起风了》同期上映。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfGePYYKHtFGD_4Drx7vJZgA1',
+    downloadCode:'fhnr'
   },
+  {
+    cover:'/gongqijunMovies/jdxdxr.webp',
+    name:'借东西的小人阿莉埃蒂',
+    author: '米林宏昌',
+    authorDes: '',
+    des:'虽然患有心脏方面的疾病，但是少年翔（神木隆之介 配音）的父母依然对他疏于呵护。为了准备即将到来的手术，翔来到了位于偏远乡间的姨婆（竹下景子 配音）家静养。姨婆家位于一片幽静的丛林中，这是一幢有着上百年历史的欧式别墅。这里除了生活着姨婆和女佣阿春（树木希林 配音）外，还有一个奇特的三口之家，“借东西一族”——小人阿莉埃蒂（志田未来 配音）和她的爸爸（三浦友和 配音）妈妈（大竹忍 配音），他们生活在别墅的地板下，只有几公分高，过着不为人类察觉的生活。遇到所需的日常用品时，便会在夜深人静之时偷偷潜入厨房借出来。翔无意中瞥见阿莉埃蒂的身影，他有心接近这些传说中的小人，却不知不觉打扰了他们的生活…… ',
+    outerDownloadUrl:'',
+    downloadUrl:'https://pan.xunlei.com/s/VMfGezMgXg5MMIJ5tEz2C-mOA1',
+    downloadCode:'pwjc'
+  }
+  // {
+  //   cover:'/gongqijunMovies/',
+  //   name:'',
+  //   author: '',
+  //   authorDes: '',
+  //   des:'',
+  //   outerDownloadUrl:'',
+  //   downloadUrl:'',
+  //   downloadCode:''
+  // },
 
   
 ]

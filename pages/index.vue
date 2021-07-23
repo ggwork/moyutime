@@ -66,6 +66,9 @@ let douban10JanTvsChildRouter = createChildRtouer('豆瓣评分最高的10部日
 // 豆瓣9分以上超好看的日剧
 let doubanGrade9JanTvsChildRouter = createChildRtouer('豆瓣9分以上超好看的日剧','doubanGrade9JanTvs','ta.png')
 
+// 宫崎骏动漫电影合集
+let gongqijunMoviesChildRouter = createChildRtouer('宫崎骏动漫电影合集(高清)','gongqijunMovies','lm.png')
+
 // 生成下载路由
 // http://www.boya888.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
@@ -84,7 +87,7 @@ function getAllWebsiteUrl(){
     // 一级页面路由
     let l1Urls = ['http://www.boya888.xyz','http://boya888.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.boya888.xyz' + cur.url
     }).concat('http://www.boya888.xyz/onlineTools','http://www.boya888.xyz/winSoftware','http://www.boya888.xyz/coderSoftware')
@@ -207,6 +210,11 @@ export default {
               title:'豆瓣Top250电影在线下载',
               url:'/douban250movies/0',
               icon:'/index/icon/movie.png'
+            },
+            {
+              title:'宫崎骏动漫电影合集(高清)',
+              url:'/gongqijunMovies/0',
+              icon:'/index/icon/lm.png'
             }
           ]
         },

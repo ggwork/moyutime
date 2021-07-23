@@ -31,6 +31,9 @@ import douban10JanTvsData from '@/assets/douban10JanTvs/data.js'
 // 豆瓣评分9分以上的日剧
 import doubanGrade9JanTvsData from '@/assets/doubanGrade9JanTvs/data.js'
 
+// 宫崎骏动漫电影合集
+import gongqijunMoviesData from '@/assets/gongqijunMovies/data.js'
+
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -76,6 +79,9 @@ export default  {
   },
   doubanGrade9JanTvs:{
     data:doubanGrade9JanTvsData
+  },
+  gongqijunMovies:{
+    data:gongqijunMoviesData
   }
   
 }
