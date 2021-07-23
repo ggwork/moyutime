@@ -66,8 +66,8 @@ let bookData=[
     authorDes: '',
     des:'在20世纪80年代末，出生在海港小镇的青年横道世之介（高良健吾 饰）一脸懵懂地出现在东京街头。正如他那个有些奇怪的名字一样，世之介仿佛与现代化大都会有着天然的差距，不过这个天生乐观且迂直的大男孩很快融入到新生活之中。在喧闹的校园里，他最先与仓持（池松壮亮 饰）、阿久津唯（朝仓亚纪 饰）相识，又和藏有秘密的加藤雄介（绫野刚 饰）短暂交往，与纯真无邪的富家千金与谢野祥子（吉高由里子 饰）谱写了一段浪漫恋情，也似乎曾对有着丰富人生阅历的千春姐（伊藤步 饰）心怀好感。此去经年，这些人偶尔停下脚步，摹地便想起那个曾给他们的生命留下美好回忆的世之介，心中会涌起怎样的情感？',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1_VXTi6iFiJNQfDKYDZieVw',
+    downloadCode:'5df2'
   },
   {
     cover:'/janpanWarmMovies/qzy.webp',
@@ -76,8 +76,8 @@ let bookData=[
     authorDes: '',
     des:'国中二年级学生栉森秀一（二宫和也 饰）与母亲友子（秋吉久美子 饰）、妹妹遥香（铃木杏 饰）住在一起。秀一的父亲早年间车祸去世，十年前母亲改嫁曾根隆司（山本寛斎 饰），而这段婚姻又因为曾根的暴力倾向而夭折。|||某天，曾根返回栉森家。秀一发现，母亲似乎有某种隐忧而不愿将曾根赶 出家门，另一方面，曾根好像又对遥香心怀不轨。对继父心存愤恨的秀一无计可施，于是通过网络购买碳酸钾，决定将曾根杀于无形。他的计划顺利实施，但他本人也越陷越深……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1NLLOyPZJBdtLXlq-zOGhnw',
+    downloadCode:'hjjq'
   },
   {
     cover:'/janpanWarmMovies/dbrdc.webp',
@@ -86,8 +86,8 @@ let bookData=[
     authorDes: '',
     des:'一段不伦之恋，造成了两代人的人生悲剧。野野宫希和子（永作博美 饰）无法得到情人的身与心，还被迫杀掉了腹中的孩子。在一个瓢泼大雨的日子里，万念俱灰的希和子走入情人的家，抱走了他们尚在襁褓中的女儿惠理菜。此后的岁月中，她带着“女儿”薰辗转各地，只为寻求“母女”安身立命的宁静之所。此去经年，长大成人的惠理菜（井上真央 饰）经历着人生的种种，而她似乎正在走一条与“母亲”希和子相同的路。无论多么不愿回首，她仍按照宿命的指引追忆着与希和子共处的那段短暂而美好的时光……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1lNFx5q8JwErZzMLBza5osg',
+    downloadCode:'wfjn'
   },
   {
     cover:'/janpanWarmMovies/djjz.webp',
@@ -96,8 +96,8 @@ let bookData=[
     authorDes: '',
     des:'2012年的一天，年届七旬的平山周吉（桥爪功 饰）和老伴富子（吉行和子 饰）结伴来到东京。这片繁华匆忙的土地上，生活着他们三个子女，在郊外开办诊所的长子幸一（西村雅彦 饰），与丈夫库造（林家正藏 饰）共同经营美发店的女儿滋子（中岛朋子 饰）以及担任歌舞伎美工的次子昌次（妻夫木聪 饰）。一家人久未团聚，自然心间充满喜悦。只是子女长大成人，荷担家业，从早到晚为了生计奔波劳碌，根本无暇带着父母游览东京。老两口先后在孩子们的家中小住，深深感受到他们的艰辛，而昌次对未来的茫然似乎也让平山夫妇多了一份担心。也许一切都会好起来，总要有放开手的时刻。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1N6A91YQzfCaXW3kYRPw6kA',
+    downloadCode:'gnnz'
   },
   {
     cover:'/janpanWarmMovies/hhdqbw.webp',
@@ -106,8 +106,8 @@ let bookData=[
     authorDes: '',
     des:'幕府末年的海阪藩，下级武士清兵卫（真田广之）在妻子病逝后，以微薄薪俸独自照料痴呆老母和两个年幼女儿，由于每日结束工作后都是匆匆回家从不参加应酬，他被同僚们戏称为“黄昏的清兵卫”。|||与清兵卫青梅竹马的朋江（宫泽里惠）同丈夫离婚回到娘家后，常到清兵卫家代他照顾母亲和女儿，招来不少蜚言蜚语。清兵卫显露高超剑技击退了无理纠缠的朋江的前夫，然而当朋江的哥哥建议他迎娶朋江时，他却因不想让朋江吃苦婉拒了好意，致使朋江自此绝迹于他家。藩主得知清兵卫的才能后，强命他前去处决一名力敌数人据守不出的反叛武士。临行前，清兵卫向朋江表白了隐藏心底已久的爱意，不想对方已经答应另一门亲事，清兵卫黯然踏上生死未卜之途。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/159LzbERuPpQrrPS0dJSh4Q',
+    downloadCode:'mg0j'
   },
   {
     cover:'/janpanWarmMovies/zjgwtj.webp',
@@ -115,7 +115,7 @@ let bookData=[
     author: '广木隆一',
     authorDes: '',
     des:'故事发生在车水马龙灯红酒绿的歌舞伎町，高桥彻（染谷将太 饰）是当地一间情人旅馆的店长，然而他对外却宣称自己在高级酒店工作。高桥彻的女友饭岛沙耶（前田敦子 饰）希望能够进军音乐圈，无奈一直等不到合适的机会。|||美优（樋井明日香 饰）是阿彻的妹妹，拥有着美丽外貌的她隐藏了一个不可告人的秘密。铃木里美（南果步 饰）在情人旅馆里担任保洁员的职务，而他的丈夫却是池泽康夫（松重丰 饰）却是一名只能隐藏在阴影之中等待诉讼时效过期的逃犯。刑警新城龙平（宫崎吐梦 饰）一直以来都在追查池泽康夫的案件，与此同时，他亦陷入了和搭档藤田里香子（河井青叶 饰）的不伦之恋中。',
-    outerDownloadUrl:'',
+    outerDownloadUrl:'ftp://2:2@d3.dl1234.com:7298/[电影天堂www.dy2018.com]再见歌舞伎町BD日语中字.rmvb',
     downloadUrl:'',
     downloadCode:''
   },
@@ -126,8 +126,8 @@ let bookData=[
     authorDes: '',
     des:'松籁第一高等学校，星期五放学后的闲暇时光，一股不安的气氛在校园肆意蔓延。传言排球部明星球员桐岛退部，他的举措使稳固的校园金字塔发生不小的撼动。黄昏的校园内，排球部的众人、羽球部的东原霞（桥本爱 饰）、桐岛的女友——校园美女梨纱（山本美月 饰）以及他的密友菊池宏树（东出昌 大 饰）莫不感到诧异，他们四处寻找桐岛的身影，最终一无所获。在这片混乱中，生活在金字塔最底层的电影部部长前田凉也（神木隆之介 饰）以及管乐部部长泽岛亚矢（大后寿寿花 饰）似乎并未受到太大的影响。身处校园夹缝中的他们默默从事本部活动，默默深藏心中对某个人的爱慕。不到一周的时间，少男少女的内心发生巨大的变化……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/17SWdod7-VVUX2bJTJpYH6w',
+    downloadCode:'yutl'
   },
   {
     cover:'/janpanWarmMovies/nanasqc.webp',
@@ -136,8 +136,8 @@ let bookData=[
     authorDes: '',
     des:'因为考大学失败，刚刚告别高中时代的都市青年平野勇气（染谷将太 饰）站在人生的十字路口。他偶然被林业培训生宣传材料上的美丽女孩所吸引，于是脑瓜一热来到三重县一个连手机信号都没有的偏僻小山村接受为期一年的林业培训课程。一开始他吊儿郎当，毫无干劲儿，因此饱受前辈饭田与喜（伊藤英明 饰）的斥责。正当勇气准备逃离之际，与封面美女石井直纪（长泽雅美 饰）不期而遇让他鬼使神差地又回到宿舍。前期培训结束，勇气随着饭田前辈来到神去村，跟随师父（光石研 饰）开始实地修行与学习。严苛的环境打磨着这个都市青年的骄傲和浮躁，不知不觉中他已成长为足以独当一面的优秀伐木工……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1YRE8M0kJxiH6u_KH--RRVg',
+    downloadCode:'ob9r'
   },
   {
     cover:'/janpanWarmMovies/hjrj.webp',
@@ -146,8 +146,8 @@ let bookData=[
     authorDes: '',
     des:'临海古都镰仓，顺山而成的小镇，不起眼的角落里生活着香田家四姐妹。她们的父亲早年和情人离家出走，母亲则干脆将女儿们抛给了外婆照顾。外婆去世后，外孙女们继承了这栋有着悠久历史的大房子。过早担负起家庭重任的大姐香田幸（绫濑遥 饰），尽心尽力照顾着两个妹妹佳乃（长泽雅美 饰）、千佳（夏帆 饰）健康成长。这一天，父亲去世的消息传到姐妹手中。她们结伴而行参加了父亲的葬礼，并且结识了从未谋面的异母妹妹浅野铃（广濑丝丝 饰）。许是血缘中的亲近之感，幸在临行前邀请铃搬来镰仓同住。未过多久，抱着对姐姐们的憧憬，铃迈入了父亲曾经生活过的房子。四季流转，姐妹们的故事悄然上演……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/11tpcFfO35TmvO_N5UnOTlg',
+    downloadCode:'8trf'
   },
   {
     cover:'/janpanWarmMovies/xslxq.webp',
@@ -156,8 +156,8 @@ let bookData=[
     authorDes: '',
     des:'平凡女孩市子（桥本爱 饰）自幼生长在位于日本东北地区的村庄小森。这里远离都市的喧嚣和浮躁，为青山绿水所环绕，俨然一个幽静怡然的世外桃源。村民们日出而作，日落而息，依靠一双勤劳的双手经营渺小却舒适的生活，与世无争。市子曾经前往东京闯荡，只不过她终究无法适应都市快节奏的步伐，最终回到了妈妈早已不在的老宅。童年时妈妈福子利用山川田野各种食材做出胡乱命名的美食，实心眼的市子在感叹受骗之余，也将美好的回忆留在了味蕾深处。仿佛遵循着母亲的步伐，她将对故乡的热爱融入了美食的烹制中。在朋友佑太（三浦贵大 饰）和吉子（松冈茉优 饰）的环绕下，享受着无忧无虑的人生……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1_Ty6A9TW25ZHYtJFESRbPQ',
+    downloadCode:'nuja'
   },
   {
     cover:'/janpanWarmMovies/sy.webp',
@@ -166,8 +166,8 @@ let bookData=[
     authorDes: '',
     des:'江户时代，山樱树下，美丽的女子野江（田中丽奈 饰）邂逅了一名武士，手冢弥一郎（东山纪之 饰）。在野江的第一位丈夫病逝后，曾经有人给手冢和野江说媒，野江家里顾虑到手冢母子相依为命想必家境平平，而回绝了这门亲事。后来野江下嫁给矶村家，这一家人刻薄势利，善于敛财，她的日子过得并不好。这次回娘家省亲，在山樱盛开的田间，野江偶遇了手冢，让她重拾幸福的感觉。|||番中大臣诹访实施暴政，鱼肉百姓，为此农民们苦不堪言。手冢为了伸张正义，明知会祸及自身，他还是在城中手刃了诹访。此事惊动城内上下，包括巴结诹访的矶村家。很快，矶村家向野江提出离婚，她又回到了娘家。春去秋来，手冢已在牢中关押多时，而野江一直默默为他祈祷。当又一年山樱盛开之时，她回到当初遇到手冢的地方，摘下一枝樱花，往手冢家里去……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfIdEvq2LyYyli2T5Inc4n0A1',
+    downloadCode:'y6mt'
   },
   {
     cover:'/janpanWarmMovies/bmqxq.webp',
@@ -176,8 +176,8 @@ let bookData=[
     authorDes: '',
     des:'一只可爱的拉布拉多犬被选去接受导盲犬的培训。为了让它与人类建立感情，它被寄养在一对夫妇的家里，因为身上有一个棕色的胎记，像一只飞翔的海鸥，便给它取名小Q。训练十分艰苦，但小Q还是成为了导盲犬，认识了第一位主人渡边先生，可是渡边先生却怀疑。情况刚有了好转，渡边先生却病倒了，小Q只好回到了训练中心。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1Otny1i0KDXXgxYS-d-U9GA',
+    downloadCode:'wab0'
   },
   {
     cover:'/janpanWarmMovies/rfrz.webp',
@@ -186,8 +186,8 @@ let bookData=[
     authorDes: '',
     des:'普通上班族野野宫良多（福山雅治 饰）和妻子野野宫绿（尾野真千子 饰）结婚多年，感情十分要好，两人共同养育着聪明乖巧的儿子野野宫庆多（二宫庆多 饰），生活宁静中处处透露着幸福。令本以为平静生活将一直持续的三人没有想到的是，一通来自庆多出生的医院的电话将这个小家庭卷入了风口 浪尖之上。|||原来，庆多并非良多和绿的儿子，而是由斋木雄大（利利·弗兰克 饰）和尤加利（真木阳子 饰）的爱情结晶。是朝夕相处的感情珍贵，还是血脉相连的羁绊重要？面对多年前一个小小误会所酿成的后果，良多和绿不知该何去何从。而对于雄大、尤加利和两人亦非亲生的孩子斋木琉晴（黄升炫 饰）来说，他们亦站在了人生的十字路口之前。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1_fOu0DC2qasCR0Mj-UWOXQ',
+    downloadCode:'gnvi'
   },
   {
     cover:'/janpanWarmMovies/jzydsan.webp',
@@ -196,8 +196,8 @@ let bookData=[
     authorDes: '',
     des:'　秋穗巧（中村狮童饰）的妻子槚田泠（竹内结子饰）一年前去世，便和6岁的儿子佑司（武开证饰）过着相依为命的日子。妻子临终前跟他们说，翌年的雨季便会跟着雨点回来看他们。儿子深信母亲会在这个时候回来他们的身边，虽然秋穗巧知道这是一件很荒唐的事，却不忍心向儿子说。|||雨季如期而至，父子竟然真的迎来了“重生”的泠，泠虽然失去了所有的记忆，就连自己的身份都不清楚，但她还是像以前一样无微不至的照顾父子俩。可雨不能总是下，雨季也有了结束的一天……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1xUUlH9fyAtV5JN9wm_5Jgg',
+    downloadCode:'gwmk'
   },
   {
     cover:'/janpanWarmMovies/njwy.webp',
@@ -206,8 +206,8 @@ let bookData=[
     authorDes: '',
     des:'1958年2月，观测船派飞机接走了南极昭和基地的第一批考察队员们，临走时潮田等人把15只桦太犬拴好，留给即将前来接替的第二批队员。不料，由于天气极度恶劣，第二批队员无法飞赴基地，原计划被迫取消，所有队员将一起回国。潮田和越智强烈要求接回那些桦太犬，但终究无法办到。潮田归国后无法摆脱内心的歉疚，辞去了北海道大学讲师之职，一一走访提供桦太犬的人家前去谢罪。在越智的推动下，稚内市内修铸起了一座铜像纪念这些牺牲的桦太犬。同时，在冰天雪地的南极，有8条桦太犬挣脱了束缚外出寻找食物，在严酷的环境中，它们陆续死去。一年后科学考察队再次来到了南极。回到基地的潮田和越智发现了幸存的两条桦太犬……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfIfHP2JZ2gZWbYPDzT7tthA1',
+    downloadCode:'a6k6'
   },
   {
     cover:'/janpanWarmMovies/jwdmq.webp',
@@ -216,8 +216,8 @@ let bookData=[
     authorDes: '',
     des:'20世纪50年代末，已成为畅销作家的伊上洪作（役所广司 饰）百忙之中回到汤岛老家探望年迈的双亲。远在东京的家中，妻子美津（赤间麻里子 饰）、长女郁子（ミムラ 饰）和次女纪子（菊池亚希子 饰）正马不停蹄地帮他做着辅助工作，正值叛逆期的小女儿琴子（宫崎葵 饰）则有意无意反抗着父亲的强权。回到东京不久，老父亲隼人（三国连太郎 饰）的噩耗传来，留给洪作的是无法参透的万千情感。岁月流转，伊上一家时聚时散，女孩们渐渐长大，有着彼此的生活与心事，一向强势的洪作也渐渐尝到初老的孤独况味。与此同时，母亲八重（树木希林 饰）随着年岁的增长，记忆力逐渐衰退。一方面履行着身为人子的义务，一方面又因童年被母亲“抛弃”而心存芥蒂。万千情感之下，是永生无割舍的羁绊……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1-wh7Qapb6jebZESiSh3SGw',
+    downloadCode:'kaw4'
   },
   {
     cover:'/janpanWarmMovies/csns.webp',
@@ -226,8 +226,8 @@ let bookData=[
     authorDes: '',
     des:'在一个平凡的小镇，在酒店底层工作的单身妈妈植村洋子（夏川結衣 饰）独自抚养着四个儿女：桃子、光生、美绪和花菜（芦田愛菜 饰）。最小的花菜顽皮可爱，是家中的开心果，不过她也常常觉得自己不受重视，受到委屈后便跑到隔壁的外公（小林稔侍 饰）、外婆（岩下志麻 饰）家里哭鼻子。不久，慈祥的外公去世，外婆的脸上时时挂着落寞的神情。花菜搬到隔壁居住，祖孙俩相依相守，从彼此的身上得到了幸福与快乐。时间倏忽而去，转眼花菜（北乃きい 饰）长大，小小的房子再也无法圈住她的脚步，而外婆则一如既往鼓励着她持续前行……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/10LVaVUj6v4MacuaUI4pccg',
+    downloadCode:'c95x'
   },
   {
     cover:'/janpanWarmMovies/zjwmdyey.webp',
@@ -236,8 +236,8 @@ let bookData=[
     authorDes: '',
     des:'好朋友洋武因病退学，无法参加毕园典礼。与他同在朝阳幼儿园紫罗兰组的康娜（芦田爱菜 饰）、拓实（佐藤瑠生亮 饰）、美琴（本田望结 饰）、俊佑（黑田博之 饰）、优衣（庵原凉香 饰）偷偷溜出幼儿园，从新宿搭上了开往高尾的中央线列车，去寻找他们的好朋友。他们在换乘站不慎和优衣失散，还遭遇了会把人变成玉米的流浪汉大叔（岸部一德 饰）。总之，漫漫的旅途中充满了快乐与艰险，他们纯真的友情也经受着考验。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1bZc0hVJDjK1BCG6l_f7McA',
+    downloadCode:'6zp7'
   },
   {
     cover:'/janpanWarmMovies/mmwy.webp',
@@ -246,8 +246,8 @@ let bookData=[
     authorDes: '',
     des:'富士电视台摄制组走遍全国各地，寻找那些与人类相互共存的可爱猫儿。北海道农场的三兄妹，清晨时光或趴在牛背上休息，或小酌刚挤出的牛奶，惬意舒适；宫城县田代岛，爱猫的人们将这里变成猫的天堂；唐人街内，呼呼大睡的强朋，成为人见人爱的招财猫；下半身瘫痪的猫儿平藏，坚强地行走世上，感动无数的人；3岁的阿纯，与田径队的伙伴们渡过难忘的青春岁月；茨城县牛久市，生活在殡仪馆的咪与老爷爷一起念经；因嫉妒谄媚的小狗而躲起来，只在晚上才和主人厮磨的马里奥；不知老奶奶已经去世，小白每天等待老人的归来，流浪在市井街头。此外还有许多身怀绝技的猫儿，为人们带来无尽的欢乐与感动……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1xzrWBUPtlL_29uyA_Y7Agg',
+    downloadCode:'9nyp'
   },
   {
     cover:'/janpanWarmMovies/xsldcp.webp',
@@ -256,8 +256,8 @@ let bookData=[
     authorDes: '',
     des:'于无法融入喧嚣吵闹的大城市，平凡女孩市子（桥本爱 饰）选择回到自幼生长的老家——位于日本东北地区的小森村。这里没有过多时尚文明的色彩，当地人过着日出而作日落而息的传统生活，他们靠天吃饭，靠着双手经营人生。生活虽不富裕，心中则是满满的充实和欢喜。受妈妈（桐島かれん 饰） 影响，市子似乎对亲手制作各种美味而廉价的料理有着格外浓厚的兴趣。妈妈失踪已经很久，对料理的回忆与再现成为母女间别具特色的交流方式。更何况还有取自大自然的各种食材，又怎能暴殄天物浪费了大好的韶光？在好友纪子（松冈茉优 饰）和裕太（三浦贵大 饰）的陪伴下，市子静静地走过了春夏秋冬……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1It__1vGEeS6o0fWSogR3_A',
+    downloadCode:'lg4x'
   },
   {
     cover:'/janpanWarmMovies/rls.webp',
@@ -266,8 +266,8 @@ let bookData=[
     authorDes: '',
     des:'买了昂贵的大提琴，想要成就一番事业的小林大悟（本木雅弘 饰），经历了4个月的管弦乐演奏，得到的却是“乐团解散”的噩耗与购买乐器的高昂债务。迫不得已，大悟与妻子美香（广末凉子 饰）搬到老屋，过着清贫的日子。某日，一则广告吸引了大悟的注意：NK代理公司，帮助旅行，高薪短工时。大悟来到NK代理公司面试，社长佐佐木生荣（山崎努 饰）二话不说就决定聘用大悟，但却对工作内容避而不谈。在大悟的再三追问下，佐佐木社长终于道明：是入殓（日语Nou Kan）工作！|||虽然心理上有所忌惮，高额的薪水还是令大悟接受了这份工作。但这样的工作对普通人谈何容易，一方面对遗体的不适，一方面又要对妻友隐瞒自己的工作，小林大悟不平凡的工作就这样开始了。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1bC5VZl7Df9hJ2wv9ha9FAw',
+    downloadCode:'bgwr'
   },
   {
     cover:'/janpanWarmMovies/blbt.webp',
@@ -276,8 +276,8 @@ let bookData=[
     authorDes: '',
     des:'“人生路上步履不停，为何总是慢一拍”。|||位于偏远小镇的横山一家，生活平静祥和。父亲恭平（原田芳雄 饰）是业已退休的医生，却时时牵挂小镇诊所内的事务。长子纯平继承了父亲的事业，却在15年前为救落水儿童而溺水身亡。次子良多（阿部宽 饰）与父亲意见相左，执意前往异地当起了绘画修复师。多年的打拼换来的却是失业，困顿的良多与带着孩子的由香里（夏川结衣 饰）结婚，相互扶持，继续生活。|||又逢纯平的忌日，良多和姐姐千奈美（YOU 饰）带着家人分别赶回家中。平静的横山家再次热闹起来……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1C4GhleE4tDucWdoljwR-Ww',
+    downloadCode:'5cis'
   },
   {
     cover:'/janpanWarmMovies/wgpssn.webp',
@@ -286,8 +286,8 @@ let bookData=[
     authorDes: '',
     des:'唯野学院的游泳部式微，只得铃木（妻夫木聡饰）一个学员，还是个菜鸟。一日，新来了一位漂亮教练佐久間，男生全被吸引过来，可是，佐久間教的竟然是花样游泳！男生花样游泳！大家纷纷打退堂鼓，只有五个人留下来。|||谁知，人算不如天算，佐久間才接手游泳队，她就被查出怀孕回家待产，而花样游泳的节目已经被报到文化节上了。群龙无首，游泳部像是一团散沙，所有人都毫不掩饰轻视之情，队员们也毫无自信。|||在对抗篮球部的一次“反击”行动中，队员们闯下大祸，只能通过卖演出门票来赔偿损失，相应的，表演也成势在必行，这下子，男生们可被逼上梁山啦。',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1iCKZEMF5Krr1Fez8ymIz3Q',
+    downloadCode:'519u'
   },
   {
     cover:'/janpanWarmMovies/qj.webp',
@@ -296,8 +296,8 @@ let bookData=[
     authorDes: '',
     des:'一段破败的婚姻，让两个尚未成年的好兄弟天各一边。哥哥航一（前田航基 饰）随母亲大迫希美（大塚寧々 饰）回到位于鹿儿岛的外婆家，弟弟龙之介（前田旺志郎 饰）则和追寻音乐梦想的“废柴”父亲木南健次（小田切让 饰）在福冈居住。兄弟俩有了各自的朋友圈，父母也似乎渐渐安定下来。可 是，他们无论如何还是希望重新聚在一起。鹿儿岛开往福冈的新干线“燕”和福冈开往鹿儿岛的“樱”号途中会有一次短暂的交汇，传说这时许下心中愿望的话，奇迹就会降临。晴朗的一天，两兄弟各自带着朋友朝着心中的奇迹之地出发……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.baidu.com/s/1W-muF02F0rhSsJ2esCEZeA',
+    downloadCode:'nwkv'
   },
   // {
   //   cover:'/janpanWarmMovies/',

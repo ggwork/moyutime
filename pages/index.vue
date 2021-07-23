@@ -69,15 +69,17 @@ let doubanGrade9JanTvsChildRouter = createChildRtouer('豆瓣9分以上超好看
 // 宫崎骏动漫电影合集
 let gongqijunMoviesChildRouter = createChildRtouer('宫崎骏动漫电影合集(高清)','gongqijunMovies','lm.png')
 
+let janpanWarmMoviesChildRouter = createChildRtouer('日本超治愈超温情的电影30部','janpanWarmMovies','cat.png')
+
 // 生成下载路由
-// http://www.boya888.xyz/common/downloadBook?type=moneyBooks&bIndex=0
+// http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
   let keys = Object.keys(allData)
   let downloadUrls = []
   for(let key of keys){
     let data = allData[key].data
     for(let i = 0; i < data.length; i++){
-      downloadUrls.push(`http://www.boya888.xyz/common/downloadBook?type=${key}&bIndex=${i}`)
+      downloadUrls.push(`http://www.mfish.xyz/common/downloadBook?type=${key}&bIndex=${i}`)
     }
   }
   return downloadUrls
@@ -85,12 +87,12 @@ function createDownloadUrl(){
 // 向百度提交页面链接，便于百度收录页面地址
 function getAllWebsiteUrl(){
     // 一级页面路由
-    let l1Urls = ['http://www.boya888.xyz','http://boya888.xyz']
+    let l1Urls = ['http://www.mfish.xyz','http://mfish.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
-      return 'http://www.boya888.xyz' + cur.url
-    }).concat('http://www.boya888.xyz/onlineTools','http://www.boya888.xyz/winSoftware','http://www.boya888.xyz/coderSoftware')
+      return 'http://www.mfish.xyz' + cur.url
+    }).concat('http://www.mfish.xyz/onlineTools','http://www.mfish.xyz/winSoftware','http://www.mfish.xyz/coderSoftware')
     let downloadUrls = createDownloadUrl()
     let allUrl = l1Urls.concat(l2Urls,downloadUrls)
     // console.log('allUrl:',allUrl.join('\n'))
@@ -215,6 +217,11 @@ export default {
               title:'宫崎骏动漫电影合集(高清)',
               url:'/gongqijunMovies/0',
               icon:'/index/icon/lm.png'
+            },
+            {
+              title:'日本超治愈超温情的电影30部',
+              url:'/janpanWarmMovies/0',
+              icon:'/index/icon/cat.png'
             }
           ]
         },

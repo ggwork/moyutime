@@ -34,6 +34,11 @@ import doubanGrade9JanTvsData from '@/assets/doubanGrade9JanTvs/data.js'
 // 宫崎骏动漫电影合集
 import gongqijunMoviesData from '@/assets/gongqijunMovies/data.js'
 
+
+// 日本超治愈超温情的电影30部
+
+import janpanWarmMoviesData from '@/assets/janpanWarmMovies/data.js'
+
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -82,6 +87,9 @@ export default  {
   },
   gongqijunMovies:{
     data:gongqijunMoviesData
+  },
+  janpanWarmMovies: {
+    data:janpanWarmMoviesData
   }
   
 }
