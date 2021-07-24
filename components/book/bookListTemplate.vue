@@ -5,7 +5,7 @@
       <el-row type="flex" v-for="(bookArr,aIndex) in splitedTo4BookData" :key="aIndex" >
         <el-col :span="6" v-for="(book,index) in bookArr" :key="index" class="book">
           <div @click="goDownload(aIndex,index)">
-            <div class="cover"><img :src="book.cover" :alt="book.name" srcset=""></div>
+            <div class="cover"><img :src="book.cover" :alt="book.name" srcset=""><span class="nums" v-if="book.douNums">{{ book.douNums }}</span></div>
             <div class="b-des">
               <h3 class="name">
                 {{book.name}} 
@@ -159,6 +159,7 @@ export default {
         text-align: center;
         background: #eaf1f5;
         font-size: 0;
+        position: relative;
         
         img{
           width: 108px;
@@ -166,6 +167,13 @@ export default {
           &:hover{
             transform: scale(1.1);
           }
+        }
+        .nums{
+          position: absolute;
+          top:10px;
+          right: 10px;
+          font-size: 16px;
+          color: red;
         }
       }
       .b-des{

@@ -36,8 +36,10 @@ import gongqijunMoviesData from '@/assets/gongqijunMovies/data.js'
 
 
 // 日本超治愈超温情的电影30部
-
 import janpanWarmMoviesData from '@/assets/janpanWarmMovies/data.js'
+
+// 最经典的10部狙击电影
+import snipe10MoviesData from '@/assets/snipe10Movies/data.js'
 
 export default  {
   moneyBooks:{
@@ -90,6 +92,10 @@ export default  {
   },
   janpanWarmMovies: {
     data:janpanWarmMoviesData
+  },
+  snipe10Movies: {
+    data:snipe10MoviesData
   }
+
   
 }

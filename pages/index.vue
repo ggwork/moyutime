@@ -71,6 +71,8 @@ let gongqijunMoviesChildRouter = createChildRtouer('宫崎骏动漫电影合集(
 
 let janpanWarmMoviesChildRouter = createChildRtouer('日本超治愈超温情的电影30部','janpanWarmMovies','cat.png')
 
+let snipe10MoviesChildRouter = createChildRtouer('最经典的10部狙击电影','snipe10Movies','qiang.png')
+
 // 生成下载路由
 // http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
@@ -89,7 +91,7 @@ function getAllWebsiteUrl(){
     // 一级页面路由
     let l1Urls = ['http://www.mfish.xyz','http://mfish.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.mfish.xyz' + cur.url
     }).concat('http://www.mfish.xyz/onlineTools','http://www.mfish.xyz/winSoftware','http://www.mfish.xyz/coderSoftware')
@@ -212,6 +214,11 @@ export default {
               title:'豆瓣Top250电影在线下载',
               url:'/douban250movies/0',
               icon:'/index/icon/movie.png'
+            },
+            {
+              title:'最经典的10部狙击电影',
+              url:'/snipe10Movies/0',
+              icon:'/index/icon/qiang.png'
             },
             {
               title:'宫崎骏动漫电影合集(高清)',

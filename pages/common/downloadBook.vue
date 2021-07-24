@@ -6,7 +6,8 @@
       </div>
       <div class="b-right">
         <h1 class="b-name">{{ curBook.name }}</h1>
-        <h1 class="b-author">{{curTypeData.authorName}}：{{ curBook.author }}</h1>
+        <h3 class="b-author">{{curTypeData.authorName}}：{{ curBook.author }}</h3>
+        <h3 class="b-grade" v-if="curBook.douNums">豆瓣评分：<span>{{ curBook.douNums }}</span></h3>
       </div>
       <div class="recom">
         <div class="re-title">你可以能感兴趣的{{ curTypeData.typeName }}</div>
@@ -33,12 +34,17 @@
       <div class="title">下载地址:</div>
       <div class="cont d-cont">本站所有内容均来源于网络，本站尽可能提供原外网下载地址。如若外网下载地址失效，可以使用本站下载。如若本站下载地址失效，可以联系本人。联系方式见最下方。</div>
       <div class="cont d-btn" @click="outerDownloadFn" v-if="curBook.outerDownloadUrl">原外网下载</div>
-      <div class="cont d-cont" v-if="curBook.outerDownloadUrl && outerDownloadClicked">
-        <div>下载地址：<a :href="curBook.outerDownloadUrl" target="_blank">{{ curBook.outerDownloadUrl }}</a></div>
+      <div class="cont" v-if="curBook.outerDownloadUrl && outerDownloadClicked">
+        <div v-if="Array.isArray(curBook.outerDownloadUrl)">
+          <div v-for="(item, index) in curBook.outerDownloadUrl" :key="index" class="d-url">
+            下载地址{{index+1}}：<a :href="item" target="_blank">{{ item }}</a>
+          </div>
+        </div>
+        <div v-else>下载地址：<a :href="curBook.outerDownloadUrl" target="_blank">{{ curBook.outerDownloadUrl }}</a></div>
       </div>
 
       <div class="cont d-btn" @click="downloadFn" v-if="curBook.downloadUrl">本站下载</div>
-      <div class="cont d-cont" v-if="curBook.downloadUrl && hasClickDownLoad">
+      <div class="cont d-url" v-if="curBook.downloadUrl && hasClickDownLoad">
         <div>下载地址：<a :href="curBook.downloadUrl" target="_blank">{{ curBook.downloadUrl }}</a></div>
         <div class="d-code">验证码：<span >{{ curBook.downloadCode }}</span></div>
       </div>
@@ -221,8 +227,19 @@ export default {
       }
       .b-author{
         line-height: 18px;
-        font-size: 14px;
+        font-size: 16px;
         margin: 8px 0;
+        font-weight: normal;
+      }
+      .b-grade{
+        line-height: 18px;
+        font-size: 16px;
+        margin: 8px 0;
+        font-weight: normal;
+        span{
+          color:#ffd596;
+          font-weight: bold;
+        }
       }
     }
     .recom{
@@ -268,7 +285,7 @@ export default {
       margin: 27px 0 11px;
       padding: 0 0 0 8px;
     }
-    .cont{
+    .d-cont{
       color: #484848;
       font-size: 16px;
       line-height: 26px;
@@ -285,12 +302,17 @@ export default {
       text-decoration: underline;
       cursor: pointer;
       width: 100px;
+      margin-top:10px;
+    }
+    .d-url{
+      margin-top:10px;
+      margin-left: 30px;
     }
     .d-con{
       font-weight: bold;
     }
     .d-code{
-      margin-top: -20px;
+      margin-top:10px;
       span{
         color:red;
       }
