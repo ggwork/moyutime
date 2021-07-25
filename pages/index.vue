@@ -73,6 +73,8 @@ let janpanWarmMoviesChildRouter = createChildRtouer('日本超治愈超温情的
 
 let snipe10MoviesChildRouter = createChildRtouer('最经典的10部狙击电影','snipe10Movies','qiang.png')
 
+let janpanWarmTvsChildRouter = createChildRtouer('超温馨超治愈的日剧15部','janpanWarmTvs','yuan.png')
+
 // 生成下载路由
 // http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
@@ -89,9 +91,9 @@ function createDownloadUrl(){
 // 向百度提交页面链接，便于百度收录页面地址
 function getAllWebsiteUrl(){
     // 一级页面路由
-    let l1Urls = ['http://www.mfish.xyz','http://mfish.xyz']
+    let l1Urls = ['http://www.mfish.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter,janpanWarmTvsChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.mfish.xyz' + cur.url
     }).concat('http://www.mfish.xyz/onlineTools','http://www.mfish.xyz/winSoftware','http://www.mfish.xyz/coderSoftware')
@@ -244,6 +246,11 @@ export default {
               title:'豆瓣9分以上超好看的日剧',
               url:'/doubanGrade9JanTvs/0',
               icon:'/index/icon/ta.png'
+            },
+            {
+              title:'超温馨超治愈的日剧15部',
+              url:'/janpanWarmTvs/0',
+              icon:'/index/icon/yuan.png'
             }
           ]
         },

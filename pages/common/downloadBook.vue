@@ -40,7 +40,7 @@
             下载地址{{index+1}}：<a :href="item" target="_blank">{{ item }}</a>
           </div>
         </div>
-        <div v-else>下载地址：<a :href="curBook.outerDownloadUrl" target="_blank">{{ curBook.outerDownloadUrl }}</a></div>
+        <div v-else class="d-url">下载地址：<a :href="curBook.outerDownloadUrl" target="_blank">{{ curBook.outerDownloadUrl }}</a></div>
       </div>
 
       <div class="cont d-btn" @click="downloadFn" v-if="curBook.downloadUrl">本站下载</div>

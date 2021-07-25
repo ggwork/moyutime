@@ -41,6 +41,9 @@ import janpanWarmMoviesData from '@/assets/janpanWarmMovies/data.js'
 // 最经典的10部狙击电影
 import snipe10MoviesData from '@/assets/snipe10Movies/data.js'
 
+// 超温馨超治愈的日剧15部
+import janpanWarmTvsData from '@/assets/janpanWarmTvs/data.js'
+
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -95,7 +98,8 @@ export default  {
   },
   snipe10Movies: {
     data:snipe10MoviesData
+  },
+  janpanWarmTvs: {
+    data:janpanWarmTvsData
   }
-
-  
 }
