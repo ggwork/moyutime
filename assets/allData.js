@@ -44,6 +44,14 @@ import snipe10MoviesData from '@/assets/snipe10Movies/data.js'
 // 超温馨超治愈的日剧15部
 import janpanWarmTvsData from '@/assets/janpanWarmTvs/data.js'
 
+// 高智商悬疑电影，烧脑烧到秃头
+import suspenseMoviesData from '@/assets/suspenseMovies/data.js'
+
+// 史上最经典的犯罪电影60部
+import crimeMoviesData from '@/assets/crimeMovies/data.js'
+// guessResultMovies
+import guessResultMoviesData from '@/assets/guessResultMovies/data.js'
+
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -101,5 +109,14 @@ export default  {
   },
   janpanWarmTvs: {
     data:janpanWarmTvsData
+  },
+  suspenseMovies:{
+    data:suspenseMoviesData
+  },
+  crimeMovies:{
+    data:crimeMoviesData
+  },
+  guessResultMovies:{
+    data:guessResultMoviesData
   }
 }
