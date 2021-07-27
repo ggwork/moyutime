@@ -167,55 +167,83 @@ export default {
           ]
         },
         {
-          title:'理财经典书籍下载',
-          children:moneyBooksChildRouter
+          title:'理财书籍推荐',
+          children:[
+            {
+              title:'理财书籍推荐下载',
+              url:'/moneyBooks/0',
+              icon:'/index/icon/money-bag.png',
+            }
+          ]
         },
         {
-          title:'前端必备书籍下载',
-          children:feBooksChildRouter
+          title:'程序员书籍推荐下载',
+          children:[
+            {
+              title: '前端必备书籍',
+              url:'/feBooks/0',
+              icon:'/index/icon/xiniu.png'
+            },
+            {
+              title: '程序员必备书籍',
+              url:'/coderBooks/0',
+              icon:'/index/icon/coder.png'
+            }
+          ]
         },
         {
-          title:'程序员必备书籍下载',
-          children:coderBooksChildRouter
+          title:'经典书籍推荐下载',
+          children:[
+            {
+              title:'知乎推荐最高的50本书',
+              url:'/zhihuBooks/0',
+              icon:'/index/icon/zhihu.png'
+            },
+            {
+              title:'职场人士必读的20本书籍',
+              url:'/professionBooks/0',
+              icon:'/index/icon/profession.png'
+            },
+            {
+              title:'心理学必读的20本书籍',
+              url:'/psychologyBooks/0',
+              icon:'/index/icon/heart.png'
+            },
+            {
+              title:'人生必看的10本书',
+              url:'/lifeBooks/0',
+              icon:'/index/icon/life.png'
+            },
+            {
+              title:'知乎推荐最多的10本小说',
+              url:'/zhNovelBooks/0',
+              icon:'/index/icon/novel.png'
+            },
+            {
+              title:'逻辑思维必读的10本书',
+              url:'/thinkBooks/0',
+              icon:'/index/icon/think.png'
+            },
+            {
+              title:'成大事者必看的10本传记',
+              url:'/biographyBooks/0',
+              icon:'/index/icon/biography.png'
+            },
+            {
+              title:'最经典的10本武侠小说',
+              url:'/wuxiaBooks/0',
+              icon:'/index/icon/wuxia.png'
+            },
+            {
+              title:'史上最强的50本推理小说',
+              url:'/detecitveBooks/0',
+              icon:'/index/icon/yandou.png'
+            }
+
+          ]
         },
         {
-          title:'知乎推荐最高的50本书下载',
-          children:zhihuBooksChildRouter
-        },
-        {
-          title:'职场人士必读的20本书籍下载',
-          children:professionBooksChildRouter
-        },
-        {
-          title:'心理学必读的20本书籍下载',
-          children:psychologyBooksChildRouter
-        },
-        {
-          title:'人生必看的10书下载',
-          children:lifeBooksChildRouter
-        },
-        {
-          title:'知乎推荐最多的10本小说',
-          children:zhNovelBooksChildRouter
-        },
-        {
-          title:'逻辑思维必读的10本书',
-          children:thinkBooksChildRouter
-        },
-        {
-          title:'成大事者必看的10本传记',
-          children:biographyBooksChildRouter
-        },
-        {
-          title:'最经典的10本武侠小说',
-          children:wuxiaBooksChildRouter
-        },
-        {
-          title:'史上最强的50本推理小说',
-          children:detecitveBooksChildRouter
-        },
-        {
-          title:'电影',
+          title:'经典电影推荐下载',
           children:[
             {
               title:'豆瓣Top250电影在线下载',

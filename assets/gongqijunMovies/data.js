@@ -36,8 +36,8 @@ let bookData=[
     authorDes: '',
     des:'那是一个动荡的年代，战争、饥饿、疾病、天灾，死神的阴影笼罩全球，却无法遮挡心头闪现的梦想和希望的光芒。平凡的日本少年堀越二郎（庵野秀明 配音）迷恋游弋长空的飞机，梦中他与意大利飞机设计师卡普罗尼（野村万斋 配音）成为朋友，享受着飞行带来的乐趣。恐怖的关东大地震，二郎邂逅一生的挂念——里见菜穗子（泷本美织 配音），短暂的相逢，无序的混乱中又失之交臂。在命运的指引下，被称为天才的二郎如愿成为飞机设计师，他和前辈同侪共同努力，绞尽脑汁提升飞机的性能。欧洲的先进设计让他们痛心疾首，另一方面又充满矛盾的打造着融合了梦想和杀人属性的机器。他追逐梦想，并与菜穗子重逢。动荡的昭和时代，风雪飘摇之中步伐从未停止……',
     outerDownloadUrl:'',
-    downloadUrl:'',
-    downloadCode:''
+    downloadUrl:'https://pan.xunlei.com/s/VMfaZlOhMcjcfX8Q1CjreYFXA1',
+    downloadCode:'kcvk'
   },
   {
     cover:'/gongqijunMovies/fzg.webp',
