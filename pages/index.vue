@@ -83,6 +83,8 @@ let guessResultMoviesChildRouter = createChildRtouer('不到结尾你永远也�
 
 let money10BooksChildRouter = createChildRtouer('投资理财必读的10本书籍','money10Books','qian.png')
 
+let war20MoviesChildRouter = createChildRtouer('20部燃爆了的战争电影','war20Movies','war.png')
+
 // 生成下载路由
 // http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
@@ -274,8 +276,13 @@ export default {
               icon:'/index/icon/dao.png'
             },
             {
-              title:'不到结尾你永远也猜不到结局的电影20部',
+              title:'你永远也猜不到结局的电影',
               url:'/guessResultMovies/0',
+              icon:'/index/icon/war.png'
+            },
+            {
+              title:'20部燃爆了的战争电影，吐血推荐',
+              url:'/war20Movies/0',
               icon:'/index/icon/cai.png'
             },
             {

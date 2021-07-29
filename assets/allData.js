@@ -54,6 +54,8 @@ import guessResultMoviesData from '@/assets/guessResultMovies/data.js'
 // 投资理财必读的10本书籍
 import money10BooksData from '@/assets/money10Books/data.js'
 
+// 20部燃爆了的战争电影
+import war20MoviesData from '@/assets/war20Movies/data.js'
 export default  {
   moneyBooks:{
     data:moneyBooksData
@@ -123,5 +125,8 @@ export default  {
   },
   money10Books:{
     data:money10BooksData
+  },
+  war20Movies:{
+    data:war20MoviesData
   }
 }
