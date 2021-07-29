@@ -51,6 +51,8 @@ import suspenseMoviesData from '@/assets/suspenseMovies/data.js'
 import crimeMoviesData from '@/assets/crimeMovies/data.js'
 // guessResultMovies
 import guessResultMoviesData from '@/assets/guessResultMovies/data.js'
+// 投资理财必读的10本书籍
+import money10BooksData from '@/assets/money10Books/data.js'
 
 export default  {
   moneyBooks:{
@@ -118,5 +120,8 @@ export default  {
   },
   guessResultMovies:{
     data:guessResultMoviesData
+  },
+  money10Books:{
+    data:money10BooksData
   }
 }

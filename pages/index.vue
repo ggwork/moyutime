@@ -80,6 +80,9 @@ let suspenseMoviesChildRouter = createChildRtouer('高智商悬疑电影，烧�
 let crimeMoviesChildRouter = createChildRtouer('史上最经典的犯罪电影60部','crimeMovies','dao.png')
 
 let guessResultMoviesChildRouter = createChildRtouer('不到结尾你永远也猜不到结局的电影20部','guessResultMovies','cai.png')
+
+let money10BooksChildRouter = createChildRtouer('投资理财必读的10本书籍','money10Books','qian.png')
+
 // 生成下载路由
 // http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
 function createDownloadUrl(){
@@ -98,7 +101,7 @@ function getAllWebsiteUrl(){
     // 一级页面路由
     let l1Urls = ['http://www.mfish.xyz']
     // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter,janpanWarmTvsChildRouter,suspenseMoviesChildRouter,crimeMoviesChildRouter,guessResultMoviesChildRouter)
+    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter,janpanWarmTvsChildRouter,suspenseMoviesChildRouter,crimeMoviesChildRouter,guessResultMoviesChildRouter,money10BooksChildRouter)
     let l2Urls = tempL2Urls.map((cur)=>{
       return 'http://www.mfish.xyz' + cur.url
     }).concat('http://www.mfish.xyz/onlineTools','http://www.mfish.xyz/winSoftware','http://www.mfish.xyz/coderSoftware')
@@ -173,6 +176,11 @@ export default {
               title:'理财书籍推荐下载',
               url:'/moneyBooks/0',
               icon:'/index/icon/money-bag.png',
+            },
+            {
+              title:'投资理财必读的10本书籍',
+              url:'/money10Books/0',
+              icon:'/index/icon/qian.png',
             }
           ]
         },
