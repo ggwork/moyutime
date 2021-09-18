@@ -50,7 +50,7 @@ let bookData=[
   {
     name:'向日葵',
     downloadLink:'https://sunlogin.oray.com/',
-    directions:'https://zhuanlan.zhihu.com/p/159136615',
+    directions:'http://www.xitongzhijia.net/xtjc/20171124/112923.html',
     brief:'向日葵远程控制支持主流操作系统Windows、Linux、Mac、Android、iOS跨平台协同操作，在任何可连入互联网的地点，都可以轻松访问和控制安装了向日葵远程控制客户端的设备。整个远控过程，可通过浏览器直接进行，无需再安装软件。 向日葵是由Oray自主研发的一款远程控制软件，主要面向企业和专业人员的远程PC管理和控制的服务软件。无论你在任何可连入互联网的地点，都可以轻松访问和控制安装了远程控制客户端的远程主机，进行文件传输、远程桌面、远程监控、远程管理等。',
   },
   {

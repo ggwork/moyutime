@@ -11,7 +11,7 @@
             {{ soft.brief }}
           </div>
         </div>
-        <div class="s-cont">
+        <div class="s-cont" v-if="soft.directions">
           <span class="s-c-detail">
             <a :href="soft.directions" target="_blank" title="使用教程" @click="checkJc(soft)">使用教程</a>
           </span>
