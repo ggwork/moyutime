@@ -85,34 +85,7 @@ let money10BooksChildRouter = createChildRtouer('投资理财必读的10本书�
 
 let war20MoviesChildRouter = createChildRtouer('20部燃爆了的战争电影','war20Movies','war.png')
 
-// 生成下载路由
-// http://www.mfish.xyz/common/downloadBook?type=moneyBooks&bIndex=0
-function createDownloadUrl(){
-  let keys = Object.keys(allData)
-  let downloadUrls = []
-  for(let key of keys){
-    let data = allData[key].data
-    for(let i = 0; i < data.length; i++){
-      downloadUrls.push(`http://www.mfish.xyz/common/downloadBook?type=${key}&bIndex=${i}`)
-    }
-  }
-  return downloadUrls
-}
-// 向百度提交页面链接，便于百度收录页面地址
-function getAllWebsiteUrl(){
-    // 一级页面路由
-    let l1Urls = ['http://www.mfish.xyz']
-    // 二级路由
-    let tempL2Urls = [].concat(moneyBooksChildRouter,feBooksChildRouter,coderBooksChildRouter,zhihuBooksChildRouter,professionBooksChildRouter,psychologyBooksChildRouter,lifeBooksChildRouter,zhNovelBooksChildRouter,thinkBooksChildRouter,biographyBooksChildRouter,wuxiaBooksChildRouter,detecitveBooksChildRouter,douban250moviesChildRouter,douban10JanTvsChildRouter,doubanGrade9JanTvsChildRouter,gongqijunMoviesChildRouter,janpanWarmMoviesChildRouter,snipe10MoviesChildRouter,janpanWarmTvsChildRouter,suspenseMoviesChildRouter,crimeMoviesChildRouter,guessResultMoviesChildRouter,money10BooksChildRouter)
-    let l2Urls = tempL2Urls.map((cur)=>{
-      return 'http://www.mfish.xyz' + cur.url
-    }).concat('http://www.mfish.xyz/onlineTools','http://www.mfish.xyz/winSoftware','http://www.mfish.xyz/coderSoftware')
-    let downloadUrls = createDownloadUrl()
-    let allUrl = l1Urls.concat(l2Urls,downloadUrls)
-    // console.log('allUrl:',allUrl.join('\n'))
-}
 
-getAllWebsiteUrl()
 
 // 8个为一组，等同于变量，this.$commonData.pageBookNums，直接引用会报错，所以这里直接设置成了8
 function createChildRtouer(title,path,icon){
